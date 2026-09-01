@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Quizmester.Models
 {
-    internal class User
+    public class User
     {
+        public int UserId { get; set; }
+        public string Username { get; set; } = string.Empty;
+        public string Role { get; set; } = "Player";
+        public bool isActive { get; set; }
+        public bool isAdmin
+        {
+            get
+            {
+                return Role == "Admin";
+            }
+        }
     }
 }
