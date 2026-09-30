@@ -135,8 +135,14 @@ namespace Quizmester.Forms
                 }
             }
 
-            using QuizForm quizForm = new QuizForm(questions, _currentUser);
-            quizForm.ShowDialog(this);
+            DialogResult result;
+
+            do
+            {
+                using QuizForm quizForm = new QuizForm(questions, _currentUser);
+                result = quizForm.ShowDialog(this);
+            }
+            while (result == DialogResult.Retry);
         }
 
         private void btnBack_Click(object sender, EventArgs e)

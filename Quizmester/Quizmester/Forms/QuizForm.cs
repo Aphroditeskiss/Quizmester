@@ -26,6 +26,8 @@ namespace Quizmester.Forms
         private double _questionDeadline;
         private bool _skipUsed;
         private bool _finished;
+        private int _answeredQuestions;
+        private int _correctAnswers;
 
         public QuizForm()
         {
@@ -52,7 +54,10 @@ namespace Quizmester.Forms
 
         public QuizForm(List<Question> questions, User user) : this()
         {
-            _questions.AddRange(questions);
+            Question[] shuffledQuestions = questions.ToArray();
+            Random.Shared.Shuffle(shuffledQuestions);
+
+            _questions.AddRange(shuffledQuestions);
             _currentUser = user;
         }
 
@@ -166,7 +171,6 @@ namespace Quizmester.Forms
 
         private void AnswerButton_Click(object? sender, EventArgs e)
         {
-            // Reject late answers even if the next timer tick has not run yet.
             if (!CheckTimeLimits())
             {
                 return;
@@ -180,8 +184,11 @@ namespace Quizmester.Forms
 
             Question question = _questions[_questionIndex];
 
+            _answeredQuestions++;
+
             if (answer.IsCorrect)
             {
+                _correctAnswers++;
                 _score += question.Points;
             }
 
@@ -259,12 +266,14 @@ namespace Quizmester.Forms
                 }
             }
 
-            MessageBox.Show(
-                $"{reason}\nFinal score: {_score}\n\n{saveMessage}",
-                "Quiz finished",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            using ResultForm resultForm = new ResultForm(
+                _score,
+                _correctAnswers,
+                _answeredQuestions,
+                reason,
+                saveMessage);
 
+            DialogResult = resultForm.ShowDialog(this);
             Close();
         }
 
