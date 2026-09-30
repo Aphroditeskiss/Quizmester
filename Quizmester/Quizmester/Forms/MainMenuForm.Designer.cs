@@ -32,6 +32,7 @@
             btnLogout = new Button();
             btnPlay = new Button();
             btnScoreboard = new Button();
+            btnAdmin = new Button();
             SuspendLayout();
             // 
             // lblWelcome
@@ -55,7 +56,7 @@
             // 
             // btnPlay
             // 
-            btnPlay.Location = new Point(22, 84);
+            btnPlay.Location = new Point(22, 69);
             btnPlay.Name = "btnPlay";
             btnPlay.Size = new Size(75, 23);
             btnPlay.TabIndex = 2;
@@ -65,7 +66,7 @@
             // 
             // btnScoreboard
             // 
-            btnScoreboard.Location = new Point(22, 130);
+            btnScoreboard.Location = new Point(22, 98);
             btnScoreboard.Name = "btnScoreboard";
             btnScoreboard.Size = new Size(75, 23);
             btnScoreboard.TabIndex = 3;
@@ -73,17 +74,30 @@
             btnScoreboard.UseVisualStyleBackColor = true;
             btnScoreboard.Click += btnScoreboard_Click;
             // 
+            // btnAdmin
+            // 
+            btnAdmin.Location = new Point(22, 127);
+            btnAdmin.Name = "btnAdmin";
+            btnAdmin.Size = new Size(75, 23);
+            btnAdmin.TabIndex = 4;
+            btnAdmin.Text = "Admin";
+            btnAdmin.UseVisualStyleBackColor = true;
+            btnAdmin.Visible = false;
+            btnAdmin.Click += btnAdmin_Click;
+            // 
             // MainMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(120, 165);
+            Controls.Add(btnAdmin);
             Controls.Add(btnScoreboard);
             Controls.Add(btnPlay);
             Controls.Add(btnLogout);
             Controls.Add(lblWelcome);
             Name = "MainMenuForm";
             Text = "MainMenuForm";
+            Load += MainMenuForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -94,5 +108,6 @@
         private Button btnLogout;
         private Button btnPlay;
         private Button btnScoreboard;
+        private Button btnAdmin;
     }
 }

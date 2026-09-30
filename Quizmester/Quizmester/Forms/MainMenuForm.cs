@@ -15,6 +15,9 @@ namespace Quizmester.Forms
         {
             _currentUser = user;
             lblWelcome.Text = $"Welcome, {_currentUser.Username}!";
+
+            btnAdmin.Visible = user.IsActive && user.IsAdmin;
+
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -40,6 +43,25 @@ namespace Quizmester.Forms
         {
             using ScoreboardForm scoreboardForm = new ScoreboardForm();
             scoreboardForm.ShowDialog(this);
+        }
+
+        private void MainMenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            if (_currentUser == null ||
+                !_currentUser.IsActive ||
+                !_currentUser.IsAdmin)
+            {
+                MessageBox.Show("Administrator access is required.");
+                return;
+            }
+
+            using AdminForm adminForm = new AdminForm(_currentUser);
+            adminForm.ShowDialog(this);
         }
     }
 }

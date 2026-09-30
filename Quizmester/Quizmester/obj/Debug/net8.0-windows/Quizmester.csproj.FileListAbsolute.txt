@@ -89,3 +89,5 @@ C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\De
 C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\Quizmester.pdb
 C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\Quizmester.genruntimeconfig.cache
 C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\ref\Quizmester.dll
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\Quizmester.Forms.AdminForm.resources
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\Quizmester.Forms.AddQuestionForm.resources
