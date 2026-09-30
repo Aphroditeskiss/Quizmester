@@ -1,0 +1,8 @@
+# Visual Studio local settings and caches
+.vs/
+*.user
+*.suo
+
+# Generated build files
+bin/
+obj/

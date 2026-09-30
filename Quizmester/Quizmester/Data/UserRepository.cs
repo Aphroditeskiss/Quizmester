@@ -1,13 +1,15 @@
-﻿using Mysql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using Quizmester.Models;
 using System;
 
 namespace Quizmester.Data
 {
+
     public class UserRepository
     {
         public bool UsernameExists(string username)
         {
+
             using MySqlConnection connection = Database.GetConnection();
             connection.Open();
 
@@ -16,20 +18,25 @@ namespace Quizmester.Data
                 FROM users
                 WHERE username = @username;
                 """;
+
             using MySqlCommand command = new MySqlCommand(sql, connection);
 
-            command.Parameters.AddWithValue(
-                "@username",
-                username);
-            
+
+            command.Parameters.AddWithValue("@username", username);
+
             long count = Convert.ToInt64(command.ExecuteScalar());
+
             return count > 0;
         }
-        
-        public void CreateUser(string username, string passwordHash, string passwordSalt)
+
+        public void CreateUser(
+            string username,
+            string passwordHash,
+            string passwordSalt)
         {
             using MySqlConnection connection = Database.GetConnection();
             connection.Open();
+
 
             string sql = """
                 INSERT INTO users
@@ -49,20 +56,13 @@ namespace Quizmester.Data
                     TRUE
                 );
                 """;
-            using MySqlCommand command = new MySqlCommand( sql, connection);
 
-            command.Parameters.AddWithValue(
-                "@username",
-                username
-            );
-            command.Parameters.AddWithValue(
-                "@passwordHash",
-                passwordHash
-            );
-            command.Parameters.AddWithValue(
-                "@passwordSalt",
-                passwordSalt
-            );
+            using MySqlCommand command = new MySqlCommand(sql, connection);
+
+            command.Parameters.AddWithValue("@username", username);
+            command.Parameters.AddWithValue("@passwordHash", passwordHash);
+            command.Parameters.AddWithValue("@passwordSalt", passwordSalt);
+
 
             command.ExecuteNonQuery();
         }
@@ -70,7 +70,6 @@ namespace Quizmester.Data
         public User? GetUserByUsername(string username)
         {
             using MySqlConnection connection = Database.GetConnection();
-
             connection.Open();
 
             string sql = """
@@ -83,44 +82,11 @@ namespace Quizmester.Data
                 WHERE username = @username;
                 """;
 
-            using MySqlCommand command = new MySqlCommand(sql,  connection);
-
-            command.Parameters.AddWithValue(
-                "@username",
-                username
-            );
-
-            using MySqlDataReader reader = command.ExecuteReader();
-
-            if(!reader.Read())
-            {
-                return null;
-            }
-            return new User
-            {
-                UserId = reader.GetInt32("user_id"),
-                username = reader.GetString("username"),
-                Role = reader.GetString("Role"),
-                IsActive = reader.GetBoolean("is_active")
-            };
-        }
-
-        public (string Hash, string Salt)?
-             GetPasswordData(string username)
-        {
-            using MySqlConnectiton connection = Database.GetConnection();
-            connection.Open();
-            string sql = """
-                SELECT
-                    password_hash,
-                    password_salt
-                FROM users
-                WHERE username = @username;
-                """;
-
-            using MySqlCommand command = new MySqlCommand(@sql, connection);
+            using MySqlCommand command = new MySqlCommand(sql, connection);
             command.Parameters.AddWithValue("@username", username);
+
             using MySqlDataReader reader = command.ExecuteReader();
+
 
             if (!reader.Read())
             {
@@ -130,17 +96,15 @@ namespace Quizmester.Data
             return new User
             {
                 UserId = reader.GetInt32("user_id"),
-                username = reader.GetString("username"),
+                Username = reader.GetString("username"),
                 Role = reader.GetString("role"),
                 IsActive = reader.GetBoolean("is_active")
             };
         }
-        public (string Hash, string Salt)?
-            GetPasswordData(string username)
-        {
-            using MySqlConnection connection =
-                Database.GetConnection();
 
+        public (string Hash, string Salt)? GetPasswordData(string username)
+        {
+            using MySqlConnection connection = Database.GetConnection();
             connection.Open();
 
             string sql = """
@@ -151,25 +115,20 @@ namespace Quizmester.Data
                 WHERE username = @username;
                 """;
 
-            using MySqlCommand command =
-                new MySqlCommand(sql, connection);
+            using MySqlCommand command = new MySqlCommand(sql, connection);
+            command.Parameters.AddWithValue("@username", username);
 
-            command.Parameters.AddWithValue(
-                "@username",
-                username
-            );
-
-            using MySqlDataReader reader =
-                command.ExecuteReader();
+            using MySqlDataReader reader = command.ExecuteReader();
 
             if (!reader.Read())
             {
                 return null;
             }
 
+
             return (
-                reader.GetString("password_hash"),
-                reader.GetString("password_salt")
+                Hash: reader.GetString("password_hash"),
+                Salt: reader.GetString("password_salt")
             );
         }
     }

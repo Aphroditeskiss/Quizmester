@@ -24,7 +24,7 @@ namespace Quizmester.Services
 
         public static bool VerifyPassword(
             string password,
-            string sotredHash,
+            string storedHash,
             string storedSalt)
         {
             byte[] salt =

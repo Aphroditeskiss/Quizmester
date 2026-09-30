@@ -598,11 +598,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aphro\\source\\repos\\Quizmester\\Quizmester\\Quizmester.csproj",
+      "projectUniqueName": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Quizmester.csproj",
       "projectName": "Quizmester",
-      "projectPath": "C:\\Users\\aphro\\source\\repos\\Quizmester\\Quizmester\\Quizmester.csproj",
+      "projectPath": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Quizmester.csproj",
       "packagesPath": "C:\\Users\\aphro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aphro\\source\\repos\\Quizmester\\Quizmester\\obj\\",
+      "outputPath": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aphro\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,8 +3,10 @@
     "",
     "\\Quizmester",
     "\\Quizmester\\Data",
+    "\\Quizmester\\Forms",
+    "\\Quizmester\\Models",
     "\\Quizmester\\Services"
   ],
-  "SelectedNode": "\\Quizmester\\Services\\AuthService.cs",
+  "SelectedNode": "\\Quizmester\\Forms\\CategorySelectionForm.cs",
   "PreviewInSolutionExplorer": false
 }
