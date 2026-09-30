@@ -113,7 +113,6 @@
             Name = "RegisterForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Quizmester - Register";
-            Load += RegisterForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

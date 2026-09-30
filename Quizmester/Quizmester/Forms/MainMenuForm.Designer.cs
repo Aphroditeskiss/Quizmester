@@ -28,12 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MainMenuForm";
+            lblWelcome = new Label();
+            btnLogout = new Button();
+            btnPlay = new Button();
+            SuspendLayout();
+            // 
+            // lblWelcome
+            // 
+            lblWelcome.AutoSize = true;
+            lblWelcome.Location = new Point(31, 22);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(57, 15);
+            lblWelcome.TabIndex = 0;
+            lblWelcome.Text = "Welcome";
+            // 
+            // btnLogout
+            // 
+            btnLogout.Location = new Point(22, 40);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(75, 23);
+            btnLogout.TabIndex = 1;
+            btnLogout.Text = "Log out";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
+            // 
+            // btnPlay
+            // 
+            btnPlay.Location = new Point(22, 84);
+            btnPlay.Name = "btnPlay";
+            btnPlay.Size = new Size(75, 23);
+            btnPlay.TabIndex = 2;
+            btnPlay.Text = "Play Quiz";
+            btnPlay.UseVisualStyleBackColor = true;
+            btnPlay.Click += btnPlay_Click;
+            // 
+            // MainMenuForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(120, 140);
+            Controls.Add(btnPlay);
+            Controls.Add(btnLogout);
+            Controls.Add(lblWelcome);
+            Name = "MainMenuForm";
+            Text = "MainMenuForm";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblWelcome;
+        private Button btnLogout;
+        private Button btnPlay;
     }
 }
