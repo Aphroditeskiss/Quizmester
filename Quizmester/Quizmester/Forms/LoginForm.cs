@@ -12,6 +12,9 @@ namespace Quizmester
         public LoginForm()
         {
             InitializeComponent();
+            #if DEBUG
+                btnTestLogin.Visible = true;
+            #endif
         }
         private void LoginForm_Load(object sender, EventArgs e)
         {
@@ -91,6 +94,49 @@ namespace Quizmester
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
+        }
+
+        private void btnTestLogin_Click(object sender, EventArgs e)
+        {
+#if DEBUG
+            const string testUsername = "aphroditesk.ss";
+
+            try
+            {
+                UserRepository repository = new UserRepository();
+                var user = repository.GetUserByUsername(testUsername);
+
+                if (user == null || !user.IsActive)
+                {
+                    MessageBox.Show(
+                        $"Create an active account named '{testUsername}' first.");
+                    return;
+                }
+
+                // Development shortcut: intentionally bypass password verification.
+                using MainMenuForm menu = new MainMenuForm(user);
+
+                txtPassword.Clear();
+                Hide();
+
+                try
+                {
+                    menu.ShowDialog(this);
+                }
+                finally
+                {
+                    Show();
+                }
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show(
+                    "Test login failed. Check your database connection.",
+                    "Database error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+#endif
         }
     }
 }

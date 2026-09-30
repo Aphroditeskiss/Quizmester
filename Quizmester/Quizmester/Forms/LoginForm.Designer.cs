@@ -35,6 +35,7 @@
             txtUsername = new TextBox();
             txtPassword = new TextBox();
             btnLogin = new Button();
+            btnTestLogin = new Button();
             SuspendLayout();
             // 
             // btnTestDatabase
@@ -50,7 +51,7 @@
             // 
             // btnOpenRegister
             // 
-            btnOpenRegister.Location = new Point(30, 130);
+            btnOpenRegister.Location = new Point(12, 130);
             btnOpenRegister.Name = "btnOpenRegister";
             btnOpenRegister.Size = new Size(75, 23);
             btnOpenRegister.TabIndex = 1;
@@ -94,7 +95,7 @@
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(131, 130);
+            btnLogin.Location = new Point(93, 130);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(75, 23);
             btnLogin.TabIndex = 6;
@@ -102,12 +103,24 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
+            // btnTestLogin
+            // 
+            btnTestLogin.Location = new Point(174, 130);
+            btnTestLogin.Name = "btnTestLogin";
+            btnTestLogin.Size = new Size(59, 23);
+            btnTestLogin.TabIndex = 7;
+            btnTestLogin.Text = "TEST";
+            btnTestLogin.UseVisualStyleBackColor = true;
+            btnTestLogin.Visible = false;
+            btnTestLogin.Click += btnTestLogin_Click;
+            // 
             // LoginForm
             // 
             AcceptButton = btnLogin;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(245, 172);
+            Controls.Add(btnTestLogin);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
@@ -132,5 +145,6 @@
         private TextBox txtUsername;
         private TextBox txtPassword;
         private Button btnLogin;
+        private Button btnTestLogin;
     }
 }
