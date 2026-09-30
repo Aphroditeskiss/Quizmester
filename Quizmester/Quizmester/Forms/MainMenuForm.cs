@@ -24,10 +24,22 @@ namespace Quizmester.Forms
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
+            if (_currentUser == null)
+            {
+                MessageBox.Show("Please log in before starting a quiz.");
+                return;
+            }
+
             using CategorySelectionForm categoryForm =
-            new CategorySelectionForm();
+                new CategorySelectionForm(_currentUser);
 
             categoryForm.ShowDialog(this);
+        }
+
+        private void btnScoreboard_Click(object sender, EventArgs e)
+        {
+            using ScoreboardForm scoreboardForm = new ScoreboardForm();
+            scoreboardForm.ShowDialog(this);
         }
     }
 }

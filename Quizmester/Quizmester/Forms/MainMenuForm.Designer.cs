@@ -31,6 +31,7 @@
             lblWelcome = new Label();
             btnLogout = new Button();
             btnPlay = new Button();
+            btnScoreboard = new Button();
             SuspendLayout();
             // 
             // lblWelcome
@@ -62,11 +63,22 @@
             btnPlay.UseVisualStyleBackColor = true;
             btnPlay.Click += btnPlay_Click;
             // 
+            // btnScoreboard
+            // 
+            btnScoreboard.Location = new Point(22, 130);
+            btnScoreboard.Name = "btnScoreboard";
+            btnScoreboard.Size = new Size(75, 23);
+            btnScoreboard.TabIndex = 3;
+            btnScoreboard.Text = "Scoreboard";
+            btnScoreboard.UseVisualStyleBackColor = true;
+            btnScoreboard.Click += btnScoreboard_Click;
+            // 
             // MainMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(120, 140);
+            ClientSize = new Size(120, 165);
+            Controls.Add(btnScoreboard);
             Controls.Add(btnPlay);
             Controls.Add(btnLogout);
             Controls.Add(lblWelcome);
@@ -81,5 +93,6 @@
         private Label lblWelcome;
         private Button btnLogout;
         private Button btnPlay;
+        private Button btnScoreboard;
     }
 }

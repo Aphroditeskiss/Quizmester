@@ -28,12 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ScoreboardForm";
+            lblTitle = new Label();
+            dgvScores = new DataGridView();
+            btnClose = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvScores).BeginInit();
+            SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Location = new Point(85, 28);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(78, 15);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Top 10 scores";
+            // 
+            // dgvScores
+            // 
+            dgvScores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvScores.Location = new Point(12, 46);
+            dgvScores.Name = "dgvScores";
+            dgvScores.Size = new Size(240, 150);
+            dgvScores.TabIndex = 1;
+            // 
+            // btnClose
+            // 
+            btnClose.Location = new Point(88, 202);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(75, 23);
+            btnClose.TabIndex = 2;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            // 
+            // ScoreboardForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(264, 242);
+            Controls.Add(btnClose);
+            Controls.Add(dgvScores);
+            Controls.Add(lblTitle);
+            Name = "ScoreboardForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Quizmester - Scoreboard";
+            ((System.ComponentModel.ISupportInitialize)dgvScores).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblTitle;
+        private DataGridView dgvScores;
+        private Button btnClose;
     }
 }
