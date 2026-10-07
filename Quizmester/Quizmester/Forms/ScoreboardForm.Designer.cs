@@ -37,37 +37,42 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Location = new Point(85, 28);
+            lblTitle.Location = new Point(97, 37);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(78, 15);
+            lblTitle.Size = new Size(99, 20);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Top 10 scores";
             // 
             // dgvScores
             // 
             dgvScores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvScores.Location = new Point(12, 46);
+            dgvScores.Location = new Point(14, 61);
+            dgvScores.Margin = new Padding(3, 4, 3, 4);
             dgvScores.Name = "dgvScores";
-            dgvScores.Size = new Size(240, 150);
+            dgvScores.RowHeadersWidth = 51;
+            dgvScores.Size = new Size(274, 200);
             dgvScores.TabIndex = 1;
+            dgvScores.CellContentClick += dgvScores_CellContentClick;
             // 
             // btnClose
             // 
-            btnClose.Location = new Point(88, 202);
+            btnClose.Location = new Point(101, 269);
+            btnClose.Margin = new Padding(3, 4, 3, 4);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(75, 23);
+            btnClose.Size = new Size(86, 31);
             btnClose.TabIndex = 2;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
             // 
             // ScoreboardForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(264, 242);
+            ClientSize = new Size(302, 323);
             Controls.Add(btnClose);
             Controls.Add(dgvScores);
             Controls.Add(lblTitle);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ScoreboardForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Quizmester - Scoreboard";

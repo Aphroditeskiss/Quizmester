@@ -4,12 +4,10 @@ using System;
 
 namespace Quizmester.Data
 {
-
     public class UserRepository
     {
         public bool UsernameExists(string username)
         {
-
             using MySqlConnection connection = Database.GetConnection();
             connection.Open();
 
@@ -19,12 +17,16 @@ namespace Quizmester.Data
                 WHERE username = @username;
                 """;
 
-            using MySqlCommand command = new MySqlCommand(sql, connection);
+            using MySqlCommand command =
+                new MySqlCommand(sql, connection);
 
+            command.Parameters.AddWithValue(
+                "@username",
+                username
+            );
 
-            command.Parameters.AddWithValue("@username", username);
-
-            long count = Convert.ToInt64(command.ExecuteScalar());
+            long count =
+                Convert.ToInt64(command.ExecuteScalar());
 
             return count > 0;
         }
@@ -34,9 +36,10 @@ namespace Quizmester.Data
             string passwordHash,
             string passwordSalt)
         {
-            using MySqlConnection connection = Database.GetConnection();
-            connection.Open();
+            using MySqlConnection connection =
+                Database.GetConnection();
 
+            connection.Open();
 
             string sql = """
                 INSERT INTO users
@@ -45,7 +48,8 @@ namespace Quizmester.Data
                     password_hash,
                     password_salt,
                     role,
-                    is_active
+                    is_active,
+                    lp
                 )
                 VALUES
                 (
@@ -53,23 +57,37 @@ namespace Quizmester.Data
                     @passwordHash,
                     @passwordSalt,
                     'Player',
-                    TRUE
+                    TRUE,
+                    0
                 );
                 """;
 
-            using MySqlCommand command = new MySqlCommand(sql, connection);
+            using MySqlCommand command =
+                new MySqlCommand(sql, connection);
 
-            command.Parameters.AddWithValue("@username", username);
-            command.Parameters.AddWithValue("@passwordHash", passwordHash);
-            command.Parameters.AddWithValue("@passwordSalt", passwordSalt);
+            command.Parameters.AddWithValue(
+                "@username",
+                username
+            );
 
+            command.Parameters.AddWithValue(
+                "@passwordHash",
+                passwordHash
+            );
+
+            command.Parameters.AddWithValue(
+                "@passwordSalt",
+                passwordSalt
+            );
 
             command.ExecuteNonQuery();
         }
 
         public User? GetUserByUsername(string username)
         {
-            using MySqlConnection connection = Database.GetConnection();
+            using MySqlConnection connection =
+                Database.GetConnection();
+
             connection.Open();
 
             string sql = """
@@ -77,16 +95,22 @@ namespace Quizmester.Data
                     user_id,
                     username,
                     role,
-                    is_active
+                    is_active,
+                    lp
                 FROM users
                 WHERE username = @username;
                 """;
 
-            using MySqlCommand command = new MySqlCommand(sql, connection);
-            command.Parameters.AddWithValue("@username", username);
+            using MySqlCommand command =
+                new MySqlCommand(sql, connection);
 
-            using MySqlDataReader reader = command.ExecuteReader();
+            command.Parameters.AddWithValue(
+                "@username",
+                username
+            );
 
+            using MySqlDataReader reader =
+                command.ExecuteReader();
 
             if (!reader.Read())
             {
@@ -98,13 +122,17 @@ namespace Quizmester.Data
                 UserId = reader.GetInt32("user_id"),
                 Username = reader.GetString("username"),
                 Role = reader.GetString("role"),
-                IsActive = reader.GetBoolean("is_active")
+                IsActive = reader.GetBoolean("is_active"),
+                LP = reader.GetInt32("lp")
             };
         }
 
-        public (string Hash, string Salt)? GetPasswordData(string username)
+        public (string Hash, string Salt)?
+            GetPasswordData(string username)
         {
-            using MySqlConnection connection = Database.GetConnection();
+            using MySqlConnection connection =
+                Database.GetConnection();
+
             connection.Open();
 
             string sql = """
@@ -115,16 +143,21 @@ namespace Quizmester.Data
                 WHERE username = @username;
                 """;
 
-            using MySqlCommand command = new MySqlCommand(sql, connection);
-            command.Parameters.AddWithValue("@username", username);
+            using MySqlCommand command =
+                new MySqlCommand(sql, connection);
 
-            using MySqlDataReader reader = command.ExecuteReader();
+            command.Parameters.AddWithValue(
+                "@username",
+                username
+            );
+
+            using MySqlDataReader reader =
+                command.ExecuteReader();
 
             if (!reader.Read())
             {
                 return null;
             }
-
 
             return (
                 Hash: reader.GetString("password_hash"),
@@ -136,17 +169,27 @@ namespace Quizmester.Data
         {
             List<User> users = new List<User>();
 
-            using MySqlConnection connection = Database.GetConnection();
+            using MySqlConnection connection =
+                Database.GetConnection();
+
             connection.Open();
 
             string sql = """
-        SELECT user_id, username, role, is_active
-        FROM users
-        ORDER BY username;
-        """;
+                SELECT
+                    user_id,
+                    username,
+                    role,
+                    is_active,
+                    lp
+                FROM users
+                ORDER BY username;
+                """;
 
-            using MySqlCommand command = new MySqlCommand(sql, connection);
-            using MySqlDataReader reader = command.ExecuteReader();
+            using MySqlCommand command =
+                new MySqlCommand(sql, connection);
+
+            using MySqlDataReader reader =
+                command.ExecuteReader();
 
             while (reader.Read())
             {
@@ -155,14 +198,18 @@ namespace Quizmester.Data
                     UserId = reader.GetInt32("user_id"),
                     Username = reader.GetString("username"),
                     Role = reader.GetString("role"),
-                    IsActive = reader.GetBoolean("is_active")
+                    IsActive = reader.GetBoolean("is_active"),
+                    LP = reader.GetInt32("lp")
                 });
             }
 
             return users;
         }
 
-        public void SetActive(int userId, bool isActive, int adminUserId)
+        public void SetActive(
+            int userId,
+            bool isActive,
+            int adminUserId)
         {
             if (userId == adminUserId)
             {
@@ -170,42 +217,59 @@ namespace Quizmester.Data
                     "You cannot change your own account's active status.");
             }
 
-            using MySqlConnection connection = Database.GetConnection();
+            using MySqlConnection connection =
+                Database.GetConnection();
+
             connection.Open();
 
-            using MySqlTransaction transaction = connection.BeginTransaction();
+            using MySqlTransaction transaction =
+                connection.BeginTransaction();
 
             string permissionSql = """
-        SELECT COUNT(*)
-        FROM users
-        WHERE user_id = @adminUserId
-          AND role = 'Admin'
-          AND is_active = TRUE;
-        """;
+                SELECT COUNT(*)
+                FROM users
+                WHERE user_id = @adminUserId
+                  AND role = 'Admin'
+                  AND is_active = TRUE;
+                """;
 
             using MySqlCommand permissionCommand =
-                new MySqlCommand(permissionSql, connection, transaction);
+                new MySqlCommand(
+                    permissionSql,
+                    connection,
+                    transaction
+                );
 
             permissionCommand.Parameters.AddWithValue(
-                "@adminUserId", adminUserId);
+                "@adminUserId",
+                adminUserId
+            );
 
-            if (Convert.ToInt32(permissionCommand.ExecuteScalar()) == 0)
+            if (Convert.ToInt32(
+                permissionCommand.ExecuteScalar()) == 0)
             {
                 throw new UnauthorizedAccessException(
                     "An active administrator account is required.");
             }
 
             string findSql = """
-        SELECT user_id
-        FROM users
-        WHERE user_id = @userId
-        FOR UPDATE;
-        """;
+                SELECT user_id
+                FROM users
+                WHERE user_id = @userId
+                FOR UPDATE;
+                """;
 
             using MySqlCommand findCommand =
-                new MySqlCommand(findSql, connection, transaction);
+                new MySqlCommand(
+                    findSql,
+                    connection,
+                    transaction
+                );
 
-            findCommand.Parameters.AddWithValue("@userId", userId);
+            findCommand.Parameters.AddWithValue(
+                "@userId",
+                userId
+            );
 
             if (findCommand.ExecuteScalar() == null)
             {
@@ -214,22 +278,36 @@ namespace Quizmester.Data
             }
 
             string updateSql = """
-        UPDATE users
-        SET is_active = @isActive
-        WHERE user_id = @userId;
-        """;
+                UPDATE users
+                SET is_active = @isActive
+                WHERE user_id = @userId;
+                """;
 
             using MySqlCommand updateCommand =
-                new MySqlCommand(updateSql, connection, transaction);
+                new MySqlCommand(
+                    updateSql,
+                    connection,
+                    transaction
+                );
 
-            updateCommand.Parameters.AddWithValue("@isActive", isActive);
-            updateCommand.Parameters.AddWithValue("@userId", userId);
+            updateCommand.Parameters.AddWithValue(
+                "@isActive",
+                isActive
+            );
+
+            updateCommand.Parameters.AddWithValue(
+                "@userId",
+                userId
+            );
 
             updateCommand.ExecuteNonQuery();
+
             transaction.Commit();
         }
 
-        public void DeleteUser(int userId, int adminUserId)
+        public void DeleteUser(
+            int userId,
+            int adminUserId)
         {
             if (userId == adminUserId)
             {
@@ -237,42 +315,59 @@ namespace Quizmester.Data
                     "You cannot delete your own account.");
             }
 
-            using MySqlConnection connection = Database.GetConnection();
+            using MySqlConnection connection =
+                Database.GetConnection();
+
             connection.Open();
 
-            using MySqlTransaction transaction = connection.BeginTransaction();
+            using MySqlTransaction transaction =
+                connection.BeginTransaction();
 
             string permissionSql = """
-        SELECT COUNT(*)
-        FROM users
-        WHERE user_id = @adminUserId
-          AND role = 'Admin'
-          AND is_active = TRUE;
-        """;
+                SELECT COUNT(*)
+                FROM users
+                WHERE user_id = @adminUserId
+                  AND role = 'Admin'
+                  AND is_active = TRUE;
+                """;
 
             using MySqlCommand permissionCommand =
-                new MySqlCommand(permissionSql, connection, transaction);
+                new MySqlCommand(
+                    permissionSql,
+                    connection,
+                    transaction
+                );
 
             permissionCommand.Parameters.AddWithValue(
-                "@adminUserId", adminUserId);
+                "@adminUserId",
+                adminUserId
+            );
 
-            if (Convert.ToInt32(permissionCommand.ExecuteScalar()) == 0)
+            if (Convert.ToInt32(
+                permissionCommand.ExecuteScalar()) == 0)
             {
                 throw new UnauthorizedAccessException(
                     "An active administrator account is required.");
             }
 
             string findSql = """
-        SELECT user_id
-        FROM users
-        WHERE user_id = @userId
-        FOR UPDATE;
-        """;
+                SELECT user_id
+                FROM users
+                WHERE user_id = @userId
+                FOR UPDATE;
+                """;
 
             using MySqlCommand findCommand =
-                new MySqlCommand(findSql, connection, transaction);
+                new MySqlCommand(
+                    findSql,
+                    connection,
+                    transaction
+                );
 
-            findCommand.Parameters.AddWithValue("@userId", userId);
+            findCommand.Parameters.AddWithValue(
+                "@userId",
+                userId
+            );
 
             if (findCommand.ExecuteScalar() == null)
             {
@@ -280,30 +375,117 @@ namespace Quizmester.Data
                     "This user no longer exists.");
             }
 
-            // Remove dependent games before deleting their owner.
             string deleteGamesSql = """
-        DELETE FROM game_sessions
-        WHERE user_id = @userId;
-        """;
+                DELETE FROM game_sessions
+                WHERE user_id = @userId;
+                """;
 
             using MySqlCommand gamesCommand =
-                new MySqlCommand(deleteGamesSql, connection, transaction);
+                new MySqlCommand(
+                    deleteGamesSql,
+                    connection,
+                    transaction
+                );
 
-            gamesCommand.Parameters.AddWithValue("@userId", userId);
+            gamesCommand.Parameters.AddWithValue(
+                "@userId",
+                userId
+            );
+
             gamesCommand.ExecuteNonQuery();
 
             string deleteUserSql = """
-        DELETE FROM users
-        WHERE user_id = @userId;
-        """;
+                DELETE FROM users
+                WHERE user_id = @userId;
+                """;
 
             using MySqlCommand userCommand =
-                new MySqlCommand(deleteUserSql, connection, transaction);
+                new MySqlCommand(
+                    deleteUserSql,
+                    connection,
+                    transaction
+                );
 
-            userCommand.Parameters.AddWithValue("@userId", userId);
+            userCommand.Parameters.AddWithValue(
+                "@userId",
+                userId
+            );
+
             userCommand.ExecuteNonQuery();
 
             transaction.Commit();
         }
+
+        public void UpdateLP(int userId, int lp)
+        {
+            using MySqlConnection connection =
+                Database.GetConnection();
+
+            connection.Open();
+
+            string sql = """
+        UPDATE users
+        SET lp = @lp
+        WHERE user_id = @userId;
+        """;
+
+            using MySqlCommand command =
+                new MySqlCommand(sql, connection);
+
+            command.Parameters.AddWithValue("@lp", lp);
+            command.Parameters.AddWithValue("@userId", userId);
+
+            int affectedRows = command.ExecuteNonQuery();
+
+            if (affectedRows == 0)
+            {
+                throw new InvalidOperationException(
+                    "LP could not be updated because the user was not found.");
+            }
+        }
+
+        public List<User> GetTopTenByLP()
+        {
+            List<User> users = new List<User>();
+
+            using MySqlConnection connection =
+                Database.GetConnection();
+
+            connection.Open();
+
+            string sql = """
+        SELECT
+            user_id,
+            username,
+            role,
+            is_active,
+            lp
+        FROM users
+        WHERE is_active = TRUE
+        ORDER BY lp DESC
+        LIMIT 10;
+        """;
+
+            using MySqlCommand command =
+                new MySqlCommand(sql, connection);
+
+            using MySqlDataReader reader =
+                command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                users.Add(new User
+                {
+                    UserId = reader.GetInt32("user_id"),
+                    Username = reader.GetString("username"),
+                    Role = reader.GetString("role"),
+                    IsActive = reader.GetBoolean("is_active"),
+                    LP = reader.GetInt32("lp")
+                });
+            }
+
+            return users;
+        }
+
     }
 }

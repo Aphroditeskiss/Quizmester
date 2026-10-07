@@ -3,24 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\categoryselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\categoryselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\resultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\resultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\resultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\resultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\scoreboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\scoreboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\scoreboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\scoreboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\models\\scoreboardentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\models\\scoreboardentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\categoryselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\categoryselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\resultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\resultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\models\\rank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\models\\rank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\services\\rankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\services\\rankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\addquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\addquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\categoryselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\categoryselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\resultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\resultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\addquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,12 +99,8 @@
       "RelativeMoniker": "D:1:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\data\\questionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,56 +115,20 @@
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\adminform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\addquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\addquestionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\scoreboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\scoreboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\categoryselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\categoryselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\scoreboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\scoreboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\data\\gamesessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\data\\gamesessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\models\\scoreboardentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\models\\scoreboardentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\models\\gamesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\models\\gamesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\quizform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\quizform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\quizform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\data\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,24 +147,12 @@
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\registerform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\quizmester\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -157,10 +169,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\data\\testdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\data\\testdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|c:\\users\\aphro\\onedrive\\documents\\github\\quizmester\\quizmester\\quizmester\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24BA7EB4-2919-76D7-6E40-B6AF838E6D29}|Quizmester\\Quizmester.csproj|solutionrelative:quizmester\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -170,11 +178,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 18,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Quizmester\\Forms\\LoginForm.cs",
@@ -188,46 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResultForm.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ResultForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\ResultForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ResultForm.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\ResultForm.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T12:17:07.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminForm.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\AdminForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\AdminForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T12:03:57.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AddQuestionForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.Designer.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\AddQuestionForm.Designer.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.Designer.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\AddQuestionForm.Designer.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAqwJIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:37:17.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "AddQuestionForm.cs",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.cs",
               "RelativeDocumentMoniker": "Quizmester\\Forms\\AddQuestionForm.cs",
@@ -236,271 +205,60 @@
               "ViewState": "AgIAAK8AAAAAAAAAAAAuwM0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-30T11:36:13.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddQuestionForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\AddQuestionForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.cs [Design]",
-              "RelativeToolTip": "Quizmester\\Forms\\AddQuestionForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:31:40.298Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AdminForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.Designer.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\AdminForm.Designer.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.Designer.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\AdminForm.Designer.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAqwMsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:27:05.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminForm.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\AdminForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\AdminForm.cs",
-              "ViewState": "AgIAAN0BAAAAAAAAAAAiwPIBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:25:52.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\AdminForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs [Design]",
-              "RelativeToolTip": "Quizmester\\Forms\\AdminForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:24:29.509Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ScoreboardForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ScoreboardForm.Designer.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\ScoreboardForm.Designer.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ScoreboardForm.Designer.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\ScoreboardForm.Designer.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:20:38.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ScoreboardForm.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ScoreboardForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\ScoreboardForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ScoreboardForm.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\ScoreboardForm.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAQwFEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:19:47.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ScoreboardEntry.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\ScoreboardEntry.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Models\\ScoreboardEntry.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\ScoreboardEntry.cs",
-              "RelativeToolTip": "Quizmester\\Models\\ScoreboardEntry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:14:56.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GameSessionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\GameSessionRepository.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Data\\GameSessionRepository.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\GameSessionRepository.cs",
-              "RelativeToolTip": "Quizmester\\Data\\GameSessionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:07:21.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "QuizForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\QuizForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.cs [Design]",
-              "RelativeToolTip": "Quizmester\\Forms\\QuizForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:00:37.884Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "QuizForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.Designer.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\QuizForm.Designer.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.Designer.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\QuizForm.Designer.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAuwI8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T10:51:42.29Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "QuizForm.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\QuizForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\QuizForm.cs",
-              "ViewState": "AgIAAP8AAAAAAAAAAAAhwBUBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T10:50:56.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "QuestionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\QuestionRepository.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Data\\QuestionRepository.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\QuestionRepository.cs",
-              "RelativeToolTip": "Quizmester\\Data\\QuestionRepository.cs",
-              "ViewState": "AgIAAKEBAAAAAAAAAAAiwLQBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T10:45:53.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategorySelectionForm.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\CategorySelectionForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\CategorySelectionForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\CategorySelectionForm.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\CategorySelectionForm.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAhwJAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T10:41:10.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Data\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\CategoryRepository.cs",
-              "RelativeToolTip": "Quizmester\\Data\\CategoryRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T10:37:19.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainMenuForm.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\MainMenuForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\MainMenuForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\MainMenuForm.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\MainMenuForm.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAjwDUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T10:23:38.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "RegisterForm.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\RegisterForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\RegisterForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T10:06:16.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RegisterForm.resx",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.resx",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\RegisterForm.resx",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.resx",
-              "RelativeToolTip": "Quizmester\\Forms\\RegisterForm.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-09-30T10:02:57.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "RegisterForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.Designer.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\RegisterForm.Designer.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.Designer.cs",
-              "RelativeToolTip": "Quizmester\\Forms\\RegisterForm.Designer.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAqwHkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T09:57:43.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\AuthService.cs",
-              "RelativeToolTip": "Quizmester\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T10:39:34.782Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\UserRepository.cs",
               "RelativeDocumentMoniker": "Quizmester\\Data\\UserRepository.cs",
               "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\UserRepository.cs",
               "RelativeToolTip": "Quizmester\\Data\\UserRepository.cs",
-              "ViewState": "AgIAAB8BAAAAAAAAAAAiwDIBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAANoBAAAAAAAAAADwv+cBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-01T10:09:14.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Services\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\PasswordHasher.cs",
-              "RelativeToolTip": "Quizmester\\Services\\PasswordHasher.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "QuizForm.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\QuizForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\QuizForm.cs",
+              "ViewState": "AgIAALcBAAAAAAAAAADwv9ABAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T10:03:12.497Z"
+              "WhenOpened": "2026-09-30T10:50:56.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMenuForm.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\MainMenuForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\MainMenuForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\MainMenuForm.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\MainMenuForm.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T10:23:38.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScoreboardForm.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ScoreboardForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\ScoreboardForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ScoreboardForm.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\ScoreboardForm.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAADwv2EAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:19:47.898Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -516,19 +274,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ResultForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ResultForm.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Forms\\ResultForm.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ResultForm.cs [Design]",
-              "RelativeToolTip": "Quizmester\\Forms\\ResultForm.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "ScoreboardEntry.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\ScoreboardEntry.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Models\\ScoreboardEntry.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\ScoreboardEntry.cs",
+              "RelativeToolTip": "Quizmester\\Models\\ScoreboardEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T07:52:59.084Z",
+              "WhenOpened": "2026-09-30T11:14:56.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\Database.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Data\\Database.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\Database.cs",
+              "RelativeToolTip": "Quizmester\\Data\\Database.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T08:17:32.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\User.cs",
+              "RelativeToolTip": "Quizmester\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T07:51:05.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Rank.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\Rank.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Models\\Rank.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\Rank.cs",
+              "RelativeToolTip": "Quizmester\\Models\\Rank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T11:27:30.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RankService.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\RankService.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Services\\RankService.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\RankService.cs",
+              "RelativeToolTip": "Quizmester\\Services\\RankService.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAuwHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T11:28:07.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QuizForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\QuizForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.cs [Design]",
+              "RelativeToolTip": "Quizmester\\Forms\\QuizForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:00:37.884Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 14,
+              "Title": "QuizService.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\QuizService.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Services\\QuizService.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\QuizService.cs",
+              "RelativeToolTip": "Quizmester\\Services\\QuizService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T07:55:01.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AddQuestionForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.Designer.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\AddQuestionForm.Designer.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.Designer.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\AddQuestionForm.Designer.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAqwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:37:17.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Quizmester\\Forms\\LoginForm.cs",
@@ -540,19 +389,228 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\User.cs",
-              "RelativeToolTip": "Quizmester\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "AdminForm.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\AdminForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T07:51:05.329Z"
+              "WhenOpened": "2026-09-30T12:03:57.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResultForm.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ResultForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\ResultForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ResultForm.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\ResultForm.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAYwFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T12:17:07.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddQuestionForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\AddQuestionForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AddQuestionForm.cs [Design]",
+              "RelativeToolTip": "Quizmester\\Forms\\AddQuestionForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:31:40.298Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AdminForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.Designer.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\AdminForm.Designer.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.Designer.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\AdminForm.Designer.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:27:05.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminForm.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\AdminForm.cs",
+              "ViewState": "AgIAAN0BAAAAAAAAAAAiwPIBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:25:52.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\AdminForm.cs [Design]",
+              "RelativeToolTip": "Quizmester\\Forms\\AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:24:29.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ScoreboardForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ScoreboardForm.Designer.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\ScoreboardForm.Designer.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ScoreboardForm.Designer.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\ScoreboardForm.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAIBJwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:20:38.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GameSessionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\GameSessionRepository.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Data\\GameSessionRepository.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\GameSessionRepository.cs",
+              "RelativeToolTip": "Quizmester\\Data\\GameSessionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T11:07:21.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "QuizForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.Designer.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\QuizForm.Designer.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\QuizForm.Designer.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\QuizForm.Designer.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T10:51:42.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QuestionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\QuestionRepository.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Data\\QuestionRepository.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\QuestionRepository.cs",
+              "RelativeToolTip": "Quizmester\\Data\\QuestionRepository.cs",
+              "ViewState": "AgIAAKEBAAAAAAAAAAAiwLQBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T10:45:53.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategorySelectionForm.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\CategorySelectionForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\CategorySelectionForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\CategorySelectionForm.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\CategorySelectionForm.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAhwI4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T10:41:10.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Data\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\CategoryRepository.cs",
+              "RelativeToolTip": "Quizmester\\Data\\CategoryRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T10:37:19.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\RegisterForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T10:06:16.669Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
+              "Title": "RegisterForm.resx",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.resx",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\RegisterForm.resx",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.resx",
+              "RelativeToolTip": "Quizmester\\Forms\\RegisterForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-09-30T10:02:57.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RegisterForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.Designer.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\RegisterForm.Designer.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.Designer.cs",
+              "RelativeToolTip": "Quizmester\\Forms\\RegisterForm.Designer.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAqwHkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T09:57:43.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\AuthService.cs",
+              "RelativeToolTip": "Quizmester\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T10:39:34.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Services\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\PasswordHasher.cs",
+              "RelativeToolTip": "Quizmester\\Services\\PasswordHasher.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T10:03:12.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ResultForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ResultForm.cs",
+              "RelativeDocumentMoniker": "Quizmester\\Forms\\ResultForm.cs",
+              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\ResultForm.cs [Design]",
+              "RelativeToolTip": "Quizmester\\Forms\\ResultForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T07:52:59.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Quizmester\\Models\\Category.cs",
@@ -564,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "Answer.cs",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\Answer.cs",
               "RelativeDocumentMoniker": "Quizmester\\Models\\Answer.cs",
@@ -576,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\Question.cs",
               "RelativeDocumentMoniker": "Quizmester\\Models\\Question.cs",
@@ -588,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "TestData.cs",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\TestData.cs",
               "RelativeDocumentMoniker": "Quizmester\\Data\\TestData.cs",
@@ -600,31 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "QuizService.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\QuizService.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Services\\QuizService.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Services\\QuizService.cs",
-              "RelativeToolTip": "Quizmester\\Services\\QuizService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T07:55:01.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Database.cs",
-              "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\Database.cs",
-              "RelativeDocumentMoniker": "Quizmester\\Data\\Database.cs",
-              "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Data\\Database.cs",
-              "RelativeToolTip": "Quizmester\\Data\\Database.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T08:17:32.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 7,
               "Title": "CategorySelectionForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\CategorySelectionForm.cs",
               "RelativeDocumentMoniker": "Quizmester\\Forms\\CategorySelectionForm.cs",
@@ -636,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "MainMenuForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "Quizmester\\Forms\\MainMenuForm.cs",
@@ -648,18 +682,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 17,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.cs",
               "RelativeDocumentMoniker": "Quizmester\\Forms\\RegisterForm.cs",
               "ToolTip": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Forms\\RegisterForm.cs [Design]",
               "RelativeToolTip": "Quizmester\\Forms\\RegisterForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T07:52:24.345Z"
+              "WhenOpened": "2026-09-01T07:52:24.345Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "GameSession.cs",
               "DocumentMoniker": "C:\\Users\\aphro\\OneDrive\\Documents\\GitHub\\Quizmester\\Quizmester\\Quizmester\\Models\\GameSession.cs",
               "RelativeDocumentMoniker": "Quizmester\\Models\\GameSession.cs",
@@ -667,8 +702,7 @@
               "RelativeToolTip": "Quizmester\\Models\\GameSession.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T07:51:40.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T07:51:40.878Z"
             }
           ]
         }

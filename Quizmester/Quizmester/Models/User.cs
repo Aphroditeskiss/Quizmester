@@ -13,6 +13,8 @@
         // Later, an administrator can disable an account.
         public bool IsActive { get; set; }
 
+        public int LP { get; set; }
+
         // This property is calculated from Role instead of stored separately.
         public bool IsAdmin
         {

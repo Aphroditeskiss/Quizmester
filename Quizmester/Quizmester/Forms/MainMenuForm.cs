@@ -1,11 +1,13 @@
 ﻿using Quizmester.Models;
+using Quizmester.Services;
 
 namespace Quizmester.Forms
 {
     public partial class MainMenuForm : Form
     {
         private readonly User? _currentUser;
-
+        private readonly RankService _rankService =
+    new RankService();
         public MainMenuForm()
         {
             InitializeComponent();
@@ -17,7 +19,7 @@ namespace Quizmester.Forms
             lblWelcome.Text = $"Welcome, {_currentUser.Username}!";
 
             btnAdmin.Visible = user.IsActive && user.IsAdmin;
-
+            LoadPlayerRank();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -63,5 +65,49 @@ namespace Quizmester.Forms
             using AdminForm adminForm = new AdminForm(_currentUser);
             adminForm.ShowDialog(this);
         }
+
+        private void LoadPlayerRank()
+        {
+            Rank rank =
+                _rankService.GetRank(_currentUser.LP);
+
+            lblRank.Text = rank.Name;
+
+            lblLP.Text =
+                $"{rank.LPIntoRank} LP";
+
+            int maxLP = GetRankProgressMaximum(rank);
+
+            pbRankProgress.Minimum = 0;
+            pbRankProgress.Maximum = maxLP;
+
+            pbRankProgress.Value =
+                Math.Clamp(
+                    rank.LPIntoRank,
+                    0,
+                    maxLP
+                );
+
+            lblLPProgress.Text =
+                $"{rank.LPIntoRank} / {maxLP} LP";
+        }
+
+        private int GetRankProgressMaximum(Rank rank)
+        {
+            return rank.Name switch
+            {
+                "Platinum" => 400,
+                "Diamond" => 400,
+                _ => 100
+            };
+        }
+
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+
+            LoadPlayerRank();
+        }
+
     }
 }

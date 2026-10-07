@@ -1,19 +1,24 @@
 ﻿using MySql.Data.MySqlClient;
 using Quizmester.Data;
 using Quizmester.Models;
+using Quizmester.Services;
 
 namespace Quizmester.Forms
 {
     public partial class ScoreboardForm : Form
     {
-        private readonly GameSessionRepository _gameSessionRepository =
-            new GameSessionRepository();
+        private readonly UserRepository _userRepository =
+            new UserRepository();
+
+        private readonly RankService _rankService =
+            new RankService();
 
         public ScoreboardForm()
         {
             InitializeComponent();
 
             btnClose.Click += btnClose_Click;
+
             ConfigureGrid();
         }
 
@@ -27,25 +32,31 @@ namespace Quizmester.Forms
             dgvScores.AllowUserToDeleteRows = false;
             dgvScores.RowHeadersVisible = false;
             dgvScores.MultiSelect = false;
+
             dgvScores.SelectionMode =
                 DataGridViewSelectionMode.FullRowSelect;
 
             dgvScores.AutoSizeColumnsMode =
                 DataGridViewAutoSizeColumnsMode.Fill;
 
-            AddColumn("Position", nameof(ScoreboardEntry.Position));
-            AddColumn("Username", nameof(ScoreboardEntry.Username));
-            AddColumn("Score", nameof(ScoreboardEntry.Score));
+            AddColumn("Position", "Position");
+            AddColumn("Username", "Username");
+            AddColumn("Rank", "Rank");
+            AddColumn("LP", "LP");
         }
 
-        private void AddColumn(string heading, string propertyName)
+        private void AddColumn(
+            string heading,
+            string propertyName)
         {
-            dgvScores.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                HeaderText = heading,
-                DataPropertyName = propertyName,
-                SortMode = DataGridViewColumnSortMode.NotSortable
-            });
+            dgvScores.Columns.Add(
+                new DataGridViewTextBoxColumn
+                {
+                    HeaderText = heading,
+                    DataPropertyName = propertyName,
+                    SortMode =
+                        DataGridViewColumnSortMode.NotSortable
+                });
         }
 
         protected override void OnLoad(EventArgs e)
@@ -54,14 +65,35 @@ namespace Quizmester.Forms
 
             try
             {
-                List<ScoreboardEntry> entries =
-                    _gameSessionRepository.GetTopTen();
+                List<User> users =
+                    _userRepository.GetTopTenByLP();
+
+                var entries = users
+                    .Select((user, index) =>
+                    {
+                        Rank rank =
+                            _rankService.GetRank(user.LP);
+
+                        return new
+                        {
+                            Position = index + 1,
+                            Username = user.Username,
+                            Rank = rank.Name,
+                            LP = $"{rank.LPIntoRank} LP"
+                        };
+                    })
+                    .ToList();
 
                 dgvScores.DataSource = entries;
 
                 if (entries.Count == 0)
                 {
-                    lblTitle.Text = "No scores yet — finish a quiz first!";
+                    lblTitle.Text =
+                        "No ranked players yet — finish a quiz first!";
+                }
+                else
+                {
+                    lblTitle.Text = "Top 10 Ranked Players";
                 }
             }
             catch (MySqlException)
@@ -74,9 +106,17 @@ namespace Quizmester.Forms
             }
         }
 
-        private void btnClose_Click(object? sender, EventArgs e)
+        private void btnClose_Click(
+            object? sender,
+            EventArgs e)
         {
             Close();
+        }
+
+        private void dgvScores_CellContentClick(
+            object sender,
+            DataGridViewCellEventArgs e)
+        {
         }
     }
 }

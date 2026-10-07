@@ -1,4 +1,6 @@
-﻿namespace Quizmester.Forms
+﻿using Quizmester.Models;
+
+namespace Quizmester.Forms
 {
     public partial class ResultForm : Form
     {
@@ -15,27 +17,59 @@
             int correctAnswers,
             int answeredQuestions,
             string reason,
-            string rankingMessage) : this()
+            string rankingMessage,
+            int lpGained,
+            Rank? oldRank,
+            Rank? newRank,
+            bool promoted) : this()
         {
             lblReason.Text = reason;
-            lblFinalScore.Text = $"Score: {score}";
+
+            // Instead of showing the raw quiz score,
+            // show how much LP the player gained.
+            lblFinalScore.Text = $"+{lpGained} LP";
 
             lblCorrectAnswers.Text =
                 $"Correct answers: {correctAnswers} / {answeredQuestions} answered";
 
             if (answeredQuestions == 0)
             {
-                lblAccuracy.Text = "Accuracy: — (no answers submitted)";
+                lblAccuracy.Text =
+                    "Accuracy: — (no answers submitted)";
             }
             else
             {
                 double accuracy =
-                    (double)correctAnswers / answeredQuestions * 100;
+                    (double)correctAnswers /
+                    answeredQuestions *
+                    100;
 
-                lblAccuracy.Text = $"Accuracy: {accuracy:0.#}%";
+                lblAccuracy.Text =
+                    $"Accuracy: {accuracy:0.#}%";
             }
 
-            lblRanking.Text = rankingMessage;
+            // Show rank information.
+            if (newRank != null)
+            {
+                if (promoted && oldRank != null)
+                {
+                    lblRanking.Text =
+                        $"PROMOTED!\n" +
+                        $"{oldRank.Name} → {newRank.Name}\n" +
+                        $"{newRank.LPIntoRank} LP";
+                }
+                else
+                {
+                    lblRanking.Text =
+                        $"{newRank.Name}\n" +
+                        $"{newRank.LPIntoRank} LP";
+                }
+            }
+            else
+            {
+                // Fallback in case rank information could not be loaded.
+                lblRanking.Text = rankingMessage;
+            }
         }
 
         private void btnPlayAgain_Click(object? sender, EventArgs e)
