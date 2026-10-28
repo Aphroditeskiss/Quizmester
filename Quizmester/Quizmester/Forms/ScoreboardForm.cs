@@ -16,18 +16,36 @@ namespace Quizmester.Forms
         private readonly RankIconService _rankIconService =
             new RankIconService();
 
+        private readonly GameSessionRepository _gameSessionRepository = new GameSessionRepository();
+        private readonly ComboBox _scoreboardView = new ComboBox();
+
         public ScoreboardForm()
         {
             InitializeComponent();
 
             btnClose.Click += btnClose_Click;
 
+            // Keep LP rankings available alongside the required quiz-score view.
+            _scoreboardView.DropDownStyle = ComboBoxStyle.DropDownList;
+            _scoreboardView.Items.AddRange(new object[] { "Quiz scores", "Ranked LP" });
+            _scoreboardView.SetBounds(12, 58, 300, 28);
+            _scoreboardView.SelectedIndex = 0;
+            Controls.Add(_scoreboardView);
+            dgvScores.Top = 96;
+            btnClose.Top = 294;
+            ClientSize = new Size(ClientSize.Width, 340);
+            _scoreboardView.SelectedIndexChanged += (_, _) =>
+            {
+                ConfigureGrid();
+                LoadScoreboard();
+            };
             ConfigureGrid();
         }
 
         private void ConfigureGrid()
         {
             dgvScores.AutoGenerateColumns = false;
+            dgvScores.DataSource = null;
             dgvScores.Columns.Clear();
 
             dgvScores.ReadOnly = true;
@@ -41,6 +59,15 @@ namespace Quizmester.Forms
 
             dgvScores.AutoSizeColumnsMode =
                 DataGridViewAutoSizeColumnsMode.Fill;
+
+            if (_scoreboardView.SelectedIndex == 0)
+            {
+                dgvScores.RowTemplate.Height = 28;
+                AddTextColumn("Position", nameof(ScoreboardEntry.Position));
+                AddTextColumn("Username", nameof(ScoreboardEntry.Username));
+                AddTextColumn("Score", nameof(ScoreboardEntry.Score));
+                return;
+            }
 
             // Make rows tall enough for the rank icon.
             dgvScores.RowTemplate.Height = 55;
@@ -113,6 +140,14 @@ namespace Quizmester.Forms
         {
             try
             {
+                if (_scoreboardView.SelectedIndex == 0)
+                {
+                    List<ScoreboardEntry> scores = _gameSessionRepository.GetTopTen();
+                    dgvScores.DataSource = scores;
+                    lblTitle.Text = scores.Count == 0 ? "No quiz scores yet" : "Top 10 Quiz Scores";
+                    return;
+                }
+
                 List<User> users =
                     _userRepository.GetTopTenByLP();
 

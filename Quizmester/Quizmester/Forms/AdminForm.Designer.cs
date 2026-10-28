@@ -196,7 +196,7 @@
             AutoScaleDimensions = new SizeF(7F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(539, 323);
+            ClientSize = new Size(532, 316);
             Controls.Add(btnDeleteUser);
             Controls.Add(btnAddUser);
             Controls.Add(btnEnableUser);

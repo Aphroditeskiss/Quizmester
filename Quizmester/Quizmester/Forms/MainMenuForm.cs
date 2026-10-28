@@ -71,6 +71,12 @@ namespace Quizmester.Forms
 
         private void LoadPlayerRank()
         {
+            if (_currentUser == null)
+            {
+                btnAdmin.Visible = false;
+                return;
+            }
+
             Rank rank =
                 _rankService.GetRank(_currentUser.LP);
 

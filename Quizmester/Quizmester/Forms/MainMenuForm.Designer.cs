@@ -182,7 +182,7 @@
             groupBox2.Controls.Add(lblLP);
             groupBox2.Controls.Add(btnAdmin);
             groupBox2.Controls.Add(lblRank);
-            groupBox2.Location = new Point(24, 163);
+            groupBox2.Location = new Point(24, 169);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(250, 254);
             groupBox2.TabIndex = 13;

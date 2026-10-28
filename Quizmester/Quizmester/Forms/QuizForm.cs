@@ -214,8 +214,14 @@ namespace Quizmester.Forms
                     )
                 );
 
-            lblQuizTime.Text =
-                $"Quiz: {quizSeconds}s";
+            bool timeRunningOut = !_finished && quizSeconds <= 10 && quizSeconds > 0;
+            lblQuizTime.Text = timeRunningOut
+                ? $"Hurry! Only {quizSeconds}s left!"
+                : $"Quiz: {quizSeconds}s";
+            lblQuizTime.BackColor = timeRunningOut ? Color.LightYellow : Color.Transparent;
+            lblQuizTime.AccessibleName = timeRunningOut
+                ? $"Quiz time warning: {quizSeconds} seconds remaining"
+                : $"Quiz time: {quizSeconds} seconds";
 
             lblQuestionTime.Text =
                 $"Question: {questionSeconds}s";
