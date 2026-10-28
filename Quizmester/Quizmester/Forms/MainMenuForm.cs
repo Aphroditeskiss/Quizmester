@@ -8,6 +8,9 @@ namespace Quizmester.Forms
         private readonly User? _currentUser;
         private readonly RankService _rankService =
     new RankService();
+
+        private readonly RankIconService _rankIconService =
+    new RankIconService();
         public MainMenuForm()
         {
             InitializeComponent();
@@ -16,7 +19,7 @@ namespace Quizmester.Forms
         public MainMenuForm(User user) : this()
         {
             _currentUser = user;
-            lblWelcome.Text = $"Welcome, {_currentUser.Username}!";
+            label.Text = $"{_currentUser.Username}!";
 
             btnAdmin.Visible = user.IsActive && user.IsAdmin;
             LoadPlayerRank();
@@ -76,20 +79,56 @@ namespace Quizmester.Forms
             lblLP.Text =
                 $"{rank.LPIntoRank} LP";
 
-            int maxLP = GetRankProgressMaximum(rank);
+            picRank.Image =
+                _rankIconService.GetRankIcon(rank);
 
-            pbRankProgress.Minimum = 0;
-            pbRankProgress.Maximum = maxLP;
+            UpdateLPProgress(rank);
+        }
 
-            pbRankProgress.Value =
+        private void UpdateLPProgress(Rank rank)
+        {
+            int lpNeeded;
+
+            if (rank.Name.StartsWith("Iron") ||
+                rank.Name.StartsWith("Bronze") ||
+                rank.Name.StartsWith("Silver") ||
+                rank.Name.StartsWith("Gold"))
+            {
+                lpNeeded = 100;
+            }
+            else if (rank.Name == "Platinum")
+            {
+                lpNeeded = 400;
+            }
+            else if (rank.Name == "Diamond")
+            {
+                lpNeeded = 400;
+            }
+            else
+            {
+                // Master is currently the highest rank.
+                progressLP.Minimum = 0;
+                progressLP.Maximum = 100;
+                progressLP.Value = 100;
+
+                lblLPProgress.Text =
+                    $"{rank.LPIntoRank} LP";
+
+                return;
+            }
+
+            progressLP.Minimum = 0;
+            progressLP.Maximum = lpNeeded;
+
+            progressLP.Value =
                 Math.Clamp(
                     rank.LPIntoRank,
                     0,
-                    maxLP
+                    lpNeeded
                 );
 
             lblLPProgress.Text =
-                $"{rank.LPIntoRank} / {maxLP} LP";
+                $"{rank.LPIntoRank} / {lpNeeded} LP";
         }
 
         private int GetRankProgressMaximum(Rank rank)

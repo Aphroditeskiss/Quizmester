@@ -42,44 +42,48 @@
             // lblScore
             // 
             lblScore.AutoSize = true;
-            lblScore.Location = new Point(312, 115);
+            lblScore.Location = new Point(173, 189);
             lblScore.Name = "lblScore";
-            lblScore.Size = new Size(48, 15);
+            lblScore.Size = new Size(59, 19);
             lblScore.TabIndex = 1;
             lblScore.Text = "Score: 0";
             // 
             // btnAnswer1
             // 
-            btnAnswer1.Location = new Point(47, 79);
+            btnAnswer1.Location = new Point(76, 95);
+            btnAnswer1.Margin = new Padding(3, 4, 3, 4);
             btnAnswer1.Name = "btnAnswer1";
-            btnAnswer1.Size = new Size(75, 23);
+            btnAnswer1.Size = new Size(75, 29);
             btnAnswer1.TabIndex = 2;
             btnAnswer1.Text = "Answer 1";
             btnAnswer1.UseVisualStyleBackColor = true;
             // 
             // btnAnswer2
             // 
-            btnAnswer2.Location = new Point(132, 79);
+            btnAnswer2.Location = new Point(161, 95);
+            btnAnswer2.Margin = new Padding(3, 4, 3, 4);
             btnAnswer2.Name = "btnAnswer2";
-            btnAnswer2.Size = new Size(75, 23);
+            btnAnswer2.Size = new Size(75, 29);
             btnAnswer2.TabIndex = 3;
             btnAnswer2.Text = "Answer 2";
             btnAnswer2.UseVisualStyleBackColor = true;
             // 
             // btnAnswer3
             // 
-            btnAnswer3.Location = new Point(213, 79);
+            btnAnswer3.Location = new Point(76, 135);
+            btnAnswer3.Margin = new Padding(3, 4, 3, 4);
             btnAnswer3.Name = "btnAnswer3";
-            btnAnswer3.Size = new Size(75, 23);
+            btnAnswer3.Size = new Size(75, 29);
             btnAnswer3.TabIndex = 4;
             btnAnswer3.Text = "Answer 3";
             btnAnswer3.UseVisualStyleBackColor = true;
             // 
             // btnAnswer4
             // 
-            btnAnswer4.Location = new Point(294, 79);
+            btnAnswer4.Location = new Point(157, 135);
+            btnAnswer4.Margin = new Padding(3, 4, 3, 4);
             btnAnswer4.Name = "btnAnswer4";
-            btnAnswer4.Size = new Size(75, 23);
+            btnAnswer4.Size = new Size(75, 29);
             btnAnswer4.TabIndex = 5;
             btnAnswer4.Text = "Answer 4";
             btnAnswer4.UseVisualStyleBackColor = true;
@@ -87,43 +91,46 @@
             // lblQuizTime
             // 
             lblQuizTime.AutoSize = true;
-            lblQuizTime.Location = new Point(32, 128);
+            lblQuizTime.Location = new Point(12, 9);
             lblQuizTime.Name = "lblQuizTime";
-            lblQuizTime.Size = new Size(54, 15);
+            lblQuizTime.Size = new Size(63, 19);
             lblQuizTime.TabIndex = 6;
             lblQuizTime.Text = "Quiz: 60s";
             // 
             // lblQuestionTime
             // 
             lblQuestionTime.AutoSize = true;
-            lblQuestionTime.Location = new Point(32, 143);
+            lblQuestionTime.Location = new Point(76, 189);
             lblQuestionTime.Name = "lblQuestionTime";
-            lblQuestionTime.Size = new Size(72, 15);
+            lblQuestionTime.Size = new Size(86, 19);
             lblQuestionTime.TabIndex = 7;
             lblQuestionTime.Text = "Question: 5s";
             // 
             // btnSkip
             // 
-            btnSkip.Location = new Point(32, 161);
+            btnSkip.Location = new Point(108, 221);
+            btnSkip.Margin = new Padding(3, 4, 3, 4);
             btnSkip.Name = "btnSkip";
-            btnSkip.Size = new Size(75, 23);
+            btnSkip.Size = new Size(75, 29);
             btnSkip.TabIndex = 8;
             btnSkip.Text = "Skip (1 left)";
             btnSkip.UseVisualStyleBackColor = true;
             // 
             // lblQuestion
             // 
-            lblQuestion.Location = new Point(48, 37);
+            lblQuestion.Location = new Point(12, 42);
             lblQuestion.Name = "lblQuestion";
-            lblQuestion.Size = new Size(321, 39);
+            lblQuestion.Size = new Size(305, 49);
             lblQuestion.TabIndex = 9;
             lblQuestion.Text = "label2";
+            lblQuestion.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // QuizForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(447, 187);
+            BackgroundImage = Properties.Resources.images__1_;
+            ClientSize = new Size(329, 263);
             Controls.Add(lblQuestion);
             Controls.Add(btnSkip);
             Controls.Add(lblQuestionTime);
@@ -133,6 +140,8 @@
             Controls.Add(btnAnswer2);
             Controls.Add(btnAnswer1);
             Controls.Add(lblScore);
+            Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "QuizForm";
             Text = "QuizForm";
             ResumeLayout(false);

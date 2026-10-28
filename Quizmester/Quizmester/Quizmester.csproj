@@ -9,7 +9,53 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Ranks\bronze.png" />
+    <None Remove="Assets\Ranks\challenger.png" />
+    <None Remove="Assets\Ranks\diamond.png" />
+    <None Remove="Assets\Ranks\emerald.png" />
+    <None Remove="Assets\Ranks\gold.png" />
+    <None Remove="Assets\Ranks\grandmaster.png" />
+    <None Remove="Assets\Ranks\iron.png" />
+    <None Remove="Assets\Ranks\master.png" />
+    <None Remove="Assets\Ranks\platinum.png" />
+    <None Remove="Assets\Ranks\silver.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="26.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Ranks\bronze.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\challenger.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\emerald.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\gold.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\grandmaster.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\iron.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\master.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\platinum.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Ranks\silver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

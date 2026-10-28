@@ -13,6 +13,9 @@ namespace Quizmester.Forms
         private readonly RankService _rankService =
             new RankService();
 
+        private readonly RankIconService _rankIconService =
+            new RankIconService();
+
         public ScoreboardForm()
         {
             InitializeComponent();
@@ -39,13 +42,35 @@ namespace Quizmester.Forms
             dgvScores.AutoSizeColumnsMode =
                 DataGridViewAutoSizeColumnsMode.Fill;
 
-            AddColumn("Position", "Position");
-            AddColumn("Username", "Username");
-            AddColumn("Rank", "Rank");
-            AddColumn("LP", "LP");
+            // Make rows tall enough for the rank icon.
+            dgvScores.RowTemplate.Height = 55;
+
+            AddTextColumn(
+                "Position",
+                "Position"
+            );
+
+            AddImageColumn(
+                "RankIcon"
+            );
+
+            AddTextColumn(
+                "Username",
+                "Username"
+            );
+
+            AddTextColumn(
+                "Rank",
+                "Rank"
+            );
+
+            AddTextColumn(
+                "LP",
+                "LP"
+            );
         }
 
-        private void AddColumn(
+        private void AddTextColumn(
             string heading,
             string propertyName)
         {
@@ -56,13 +81,36 @@ namespace Quizmester.Forms
                     DataPropertyName = propertyName,
                     SortMode =
                         DataGridViewColumnSortMode.NotSortable
-                });
+                }
+            );
+        }
+
+        private void AddImageColumn(
+            string propertyName)
+        {
+            DataGridViewImageColumn imageColumn =
+                new DataGridViewImageColumn
+                {
+                    HeaderText = "",
+                    DataPropertyName = propertyName,
+                    ImageLayout =
+                        DataGridViewImageCellLayout.Zoom,
+                    SortMode =
+                        DataGridViewColumnSortMode.NotSortable
+                };
+
+            dgvScores.Columns.Add(imageColumn);
         }
 
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
 
+            LoadScoreboard();
+        }
+
+        private void LoadScoreboard()
+        {
             try
             {
                 List<User> users =
@@ -74,16 +122,26 @@ namespace Quizmester.Forms
                         Rank rank =
                             _rankService.GetRank(user.LP);
 
+                        Image? rankIcon =
+                            _rankIconService.GetRankIcon(rank);
+
                         return new
                         {
                             Position = index + 1,
+
+                            RankIcon = rankIcon,
+
                             Username = user.Username,
+
                             Rank = rank.Name,
-                            LP = $"{rank.LPIntoRank} LP"
+
+                            LP =
+                                $"{rank.LPIntoRank} LP"
                         };
                     })
                     .ToList();
 
+                dgvScores.DataSource = null;
                 dgvScores.DataSource = entries;
 
                 if (entries.Count == 0)
@@ -93,7 +151,8 @@ namespace Quizmester.Forms
                 }
                 else
                 {
-                    lblTitle.Text = "Top 10 Ranked Players";
+                    lblTitle.Text =
+                        "Top 10 Ranked Players";
                 }
             }
             catch (MySqlException)
@@ -102,7 +161,8 @@ namespace Quizmester.Forms
                     "Unable to load the scoreboard. Check your database connection.",
                     "Database error",
                     MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                    MessageBoxIcon.Error
+                );
             }
         }
 

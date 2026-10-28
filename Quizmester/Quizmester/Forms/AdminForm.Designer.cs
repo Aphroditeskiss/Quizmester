@@ -49,17 +49,18 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Location = new Point(12, 9);
+            lblTitle.Location = new Point(12, 11);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(86, 15);
+            lblTitle.Size = new Size(102, 19);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Administration";
             // 
             // btnClose
             // 
-            btnClose.Location = new Point(177, 183);
+            btnClose.Location = new Point(177, 269);
+            btnClose.Margin = new Padding(3, 4, 3, 4);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(75, 23);
+            btnClose.Size = new Size(75, 29);
             btnClose.TabIndex = 1;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
@@ -67,25 +68,29 @@
             // dgvQuestions
             // 
             dgvQuestions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvQuestions.Location = new Point(12, 27);
+            dgvQuestions.Location = new Point(12, 34);
+            dgvQuestions.Margin = new Padding(3, 4, 3, 4);
             dgvQuestions.Name = "dgvQuestions";
-            dgvQuestions.Size = new Size(240, 150);
+            dgvQuestions.RowHeadersWidth = 51;
+            dgvQuestions.Size = new Size(240, 190);
             dgvQuestions.TabIndex = 2;
             // 
             // btnRefresh
             // 
-            btnRefresh.Location = new Point(12, 183);
+            btnRefresh.Location = new Point(12, 269);
+            btnRefresh.Margin = new Padding(3, 4, 3, 4);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(75, 23);
+            btnRefresh.Size = new Size(75, 29);
             btnRefresh.TabIndex = 3;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = true;
             // 
             // btnAddQuestion
             // 
-            btnAddQuestion.Location = new Point(33, 212);
+            btnAddQuestion.Location = new Point(12, 232);
+            btnAddQuestion.Margin = new Padding(3, 4, 3, 4);
             btnAddQuestion.Name = "btnAddQuestion";
-            btnAddQuestion.Size = new Size(93, 23);
+            btnAddQuestion.Size = new Size(75, 29);
             btnAddQuestion.TabIndex = 4;
             btnAddQuestion.Text = "Add question";
             btnAddQuestion.UseVisualStyleBackColor = true;
@@ -93,9 +98,10 @@
             // 
             // btnEditQuestion
             // 
-            btnEditQuestion.Location = new Point(132, 212);
+            btnEditQuestion.Location = new Point(174, 232);
+            btnEditQuestion.Margin = new Padding(3, 4, 3, 4);
             btnEditQuestion.Name = "btnEditQuestion";
-            btnEditQuestion.Size = new Size(93, 23);
+            btnEditQuestion.Size = new Size(75, 29);
             btnEditQuestion.TabIndex = 5;
             btnEditQuestion.Text = "Edit question";
             btnEditQuestion.UseVisualStyleBackColor = true;
@@ -103,45 +109,50 @@
             // 
             // btnDeleteQuestion
             // 
-            btnDeleteQuestion.Location = new Point(57, 240);
+            btnDeleteQuestion.Location = new Point(93, 232);
+            btnDeleteQuestion.Margin = new Padding(3, 4, 3, 4);
             btnDeleteQuestion.Name = "btnDeleteQuestion";
-            btnDeleteQuestion.Size = new Size(138, 23);
+            btnDeleteQuestion.Size = new Size(75, 29);
             btnDeleteQuestion.TabIndex = 6;
-            btnDeleteQuestion.Text = "Delete question";
+            btnDeleteQuestion.Text = "Delete";
             btnDeleteQuestion.UseVisualStyleBackColor = true;
             btnDeleteQuestion.Click += btnDeleteQuestion_Click;
             // 
             // lblUsers
             // 
             lblUsers.AutoSize = true;
-            lblUsers.Location = new Point(287, 9);
+            lblUsers.Location = new Point(282, 11);
             lblUsers.Name = "lblUsers";
-            lblUsers.Size = new Size(81, 15);
+            lblUsers.Size = new Size(98, 19);
             lblUsers.TabIndex = 7;
             lblUsers.Text = "User accounts";
             // 
             // dgvUsers
             // 
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Location = new Point(287, 27);
+            dgvUsers.Location = new Point(282, 34);
+            dgvUsers.Margin = new Padding(3, 4, 3, 4);
             dgvUsers.Name = "dgvUsers";
-            dgvUsers.Size = new Size(240, 150);
+            dgvUsers.RowHeadersWidth = 51;
+            dgvUsers.Size = new Size(240, 190);
             dgvUsers.TabIndex = 8;
             // 
             // btnRefreshUsers
             // 
-            btnRefreshUsers.Location = new Point(287, 183);
+            btnRefreshUsers.Location = new Point(282, 232);
+            btnRefreshUsers.Margin = new Padding(3, 4, 3, 4);
             btnRefreshUsers.Name = "btnRefreshUsers";
-            btnRefreshUsers.Size = new Size(75, 23);
+            btnRefreshUsers.Size = new Size(78, 29);
             btnRefreshUsers.TabIndex = 9;
             btnRefreshUsers.Text = "Refresh";
             btnRefreshUsers.UseVisualStyleBackColor = true;
             // 
             // btnDisableUser
             // 
-            btnDisableUser.Location = new Point(362, 183);
+            btnDisableUser.Location = new Point(366, 232);
+            btnDisableUser.Margin = new Padding(3, 4, 3, 4);
             btnDisableUser.Name = "btnDisableUser";
-            btnDisableUser.Size = new Size(81, 23);
+            btnDisableUser.Size = new Size(78, 29);
             btnDisableUser.TabIndex = 10;
             btnDisableUser.Text = "Disable user";
             btnDisableUser.UseVisualStyleBackColor = true;
@@ -149,9 +160,10 @@
             // 
             // btnEnableUser
             // 
-            btnEnableUser.Location = new Point(449, 183);
+            btnEnableUser.Location = new Point(449, 232);
+            btnEnableUser.Margin = new Padding(3, 4, 3, 4);
             btnEnableUser.Name = "btnEnableUser";
-            btnEnableUser.Size = new Size(78, 23);
+            btnEnableUser.Size = new Size(78, 29);
             btnEnableUser.TabIndex = 11;
             btnEnableUser.Text = "Enable user";
             btnEnableUser.UseVisualStyleBackColor = true;
@@ -159,9 +171,10 @@
             // 
             // btnAddUser
             // 
-            btnAddUser.Location = new Point(326, 212);
+            btnAddUser.Location = new Point(322, 269);
+            btnAddUser.Margin = new Padding(3, 4, 3, 4);
             btnAddUser.Name = "btnAddUser";
-            btnAddUser.Size = new Size(75, 23);
+            btnAddUser.Size = new Size(75, 29);
             btnAddUser.TabIndex = 12;
             btnAddUser.Text = "Add player";
             btnAddUser.UseVisualStyleBackColor = true;
@@ -169,9 +182,10 @@
             // 
             // btnDeleteUser
             // 
-            btnDeleteUser.Location = new Point(407, 212);
+            btnDeleteUser.Location = new Point(402, 269);
+            btnDeleteUser.Margin = new Padding(3, 4, 3, 4);
             btnDeleteUser.Name = "btnDeleteUser";
-            btnDeleteUser.Size = new Size(75, 23);
+            btnDeleteUser.Size = new Size(75, 29);
             btnDeleteUser.TabIndex = 13;
             btnDeleteUser.Text = "Delete user";
             btnDeleteUser.UseVisualStyleBackColor = true;
@@ -179,9 +193,10 @@
             // 
             // AdminForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(702, 275);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(539, 323);
             Controls.Add(btnDeleteUser);
             Controls.Add(btnAddUser);
             Controls.Add(btnEnableUser);
@@ -196,6 +211,8 @@
             Controls.Add(dgvQuestions);
             Controls.Add(btnClose);
             Controls.Add(lblTitle);
+            Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "AdminForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "AdminForm";

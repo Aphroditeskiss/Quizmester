@@ -1,9 +1,13 @@
 ﻿using Quizmester.Models;
+using Quizmester.Services;
 
 namespace Quizmester.Forms
 {
     public partial class ResultForm : Form
     {
+        private readonly RankIconService _rankIconService =
+            new RankIconService();
+
         public ResultForm()
         {
             InitializeComponent();
@@ -25,9 +29,8 @@ namespace Quizmester.Forms
         {
             lblReason.Text = reason;
 
-            // Instead of showing the raw quiz score,
-            // show how much LP the player gained.
-            lblFinalScore.Text = $"+{lpGained} LP";
+            lblFinalScore.Text =
+                $"+{lpGained} LP";
 
             lblCorrectAnswers.Text =
                 $"Correct answers: {correctAnswers} / {answeredQuestions} answered";
@@ -48,9 +51,11 @@ namespace Quizmester.Forms
                     $"Accuracy: {accuracy:0.#}%";
             }
 
-            // Show rank information.
             if (newRank != null)
             {
+                picRank.Image =
+                    _rankIconService.GetRankIcon(newRank);
+
                 if (promoted && oldRank != null)
                 {
                     lblRanking.Text =
@@ -67,21 +72,31 @@ namespace Quizmester.Forms
             }
             else
             {
-                // Fallback in case rank information could not be loaded.
-                lblRanking.Text = rankingMessage;
+                picRank.Image = null;
+
+                lblRanking.Text =
+                    rankingMessage;
             }
         }
 
-        private void btnPlayAgain_Click(object? sender, EventArgs e)
+        private void btnPlayAgain_Click(
+            object? sender,
+            EventArgs e)
         {
-            DialogResult = DialogResult.Retry;
+            DialogResult =
+                DialogResult.Retry;
+
             Close();
         }
 
-        private void btnBack_Click(object? sender, EventArgs e)
+        private void btnBack_Click(
+            object? sender,
+            EventArgs e)
         {
-            DialogResult = DialogResult.OK;
+            DialogResult =
+                DialogResult.OK;
+
             Close();
         }
     }
-}
+}   

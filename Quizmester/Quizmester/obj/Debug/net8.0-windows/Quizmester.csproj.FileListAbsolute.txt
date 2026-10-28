@@ -91,3 +91,14 @@ C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\De
 C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\ref\Quizmester.dll
 C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\Quizmester.Forms.AdminForm.resources
 C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\Quizmester.Forms.AddQuestionForm.resources
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\obj\Debug\net8.0-windows\Quizmester.Properties.Resources.resources
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\bronze.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\challenger.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\diamond.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\emerald.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\gold.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\grandmaster.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\iron.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\master.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\platinum.png
+C:\Users\aphro\OneDrive\Documents\GitHub\Quizmester\Quizmester\Quizmester\bin\Debug\net8.0-windows\Assets\Ranks\silver.png

@@ -38,9 +38,10 @@
             // lblCategories
             // 
             lblCategories.AutoSize = true;
-            lblCategories.Location = new Point(38, 36);
+            lblCategories.Font = new Font("Impact", 13F);
+            lblCategories.Location = new Point(12, 37);
             lblCategories.Name = "lblCategories";
-            lblCategories.Size = new Size(172, 15);
+            lblCategories.Size = new Size(292, 27);
             lblCategories.TabIndex = 0;
             lblCategories.Text = "Choose one or more categories";
             // 
@@ -48,17 +49,19 @@
             // 
             clbCategories.CheckOnClick = true;
             clbCategories.FormattingEnabled = true;
-            clbCategories.Location = new Point(61, 54);
+            clbCategories.Location = new Point(60, 68);
+            clbCategories.Margin = new Padding(3, 4, 3, 4);
             clbCategories.Name = "clbCategories";
-            clbCategories.Size = new Size(120, 94);
+            clbCategories.Size = new Size(196, 130);
             clbCategories.TabIndex = 1;
             // 
             // chkGeneral
             // 
             chkGeneral.AutoSize = true;
-            chkGeneral.Location = new Point(72, 154);
+            chkGeneral.Location = new Point(107, 205);
+            chkGeneral.Margin = new Padding(3, 4, 3, 4);
             chkGeneral.Name = "chkGeneral";
-            chkGeneral.Size = new Size(97, 19);
+            chkGeneral.Size = new Size(117, 23);
             chkGeneral.TabIndex = 2;
             chkGeneral.Text = "All categories";
             chkGeneral.UseVisualStyleBackColor = true;
@@ -66,9 +69,10 @@
             // 
             // btnContinue
             // 
-            btnContinue.Location = new Point(38, 179);
+            btnContinue.Location = new Point(84, 236);
+            btnContinue.Margin = new Padding(3, 4, 3, 4);
             btnContinue.Name = "btnContinue";
-            btnContinue.Size = new Size(75, 23);
+            btnContinue.Size = new Size(75, 29);
             btnContinue.TabIndex = 3;
             btnContinue.Text = "Continue";
             btnContinue.UseVisualStyleBackColor = true;
@@ -76,9 +80,10 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(119, 179);
+            btnBack.Location = new Point(165, 236);
+            btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(75, 23);
+            btnBack.Size = new Size(75, 29);
             btnBack.TabIndex = 4;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -86,14 +91,17 @@
             // 
             // CategorySelectionForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(247, 249);
+            BackgroundImage = Properties.Resources.images__1_;
+            ClientSize = new Size(315, 278);
             Controls.Add(btnBack);
             Controls.Add(btnContinue);
             Controls.Add(chkGeneral);
             Controls.Add(clbCategories);
             Controls.Add(lblCategories);
+            Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "CategorySelectionForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Quizmester - Categories";
