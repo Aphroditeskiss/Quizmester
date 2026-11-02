@@ -15,6 +15,7 @@ namespace Quizmester.Forms
         public MainMenuForm()
         {
             InitializeComponent();
+            btnSpeedQuiz.Click += btnSpeedQuiz_Click;
         }
 
         public MainMenuForm(User user) : this()
@@ -135,5 +136,18 @@ namespace Quizmester.Forms
             LoadPlayerRank();
         }
 
+        private void btnSpeedQuiz_Click(object sender, EventArgs e)
+        {
+            if (_currentUser == null)
+            {
+                MessageBox.Show("Please log in before starting a quiz.");
+                return;
+            }
+
+            using SpeedQuizForm speedQuizForm =
+                new SpeedQuizForm(_currentUser);
+
+            speedQuizForm.ShowDialog(this);
+        }
     }
 }

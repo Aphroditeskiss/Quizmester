@@ -41,6 +41,7 @@
             label = new Label();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
+            btnSpeedQuiz = new Button();
             ((System.ComponentModel.ISupportInitialize)picRank).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -70,7 +71,7 @@
             // 
             // btnScoreboard
             // 
-            btnScoreboard.Location = new Point(78, 91);
+            btnScoreboard.Location = new Point(80, 128);
             btnScoreboard.Margin = new Padding(4);
             btnScoreboard.Name = "btnScoreboard";
             btnScoreboard.Size = new Size(93, 29);
@@ -81,7 +82,7 @@
             // 
             // btnAdmin
             // 
-            btnAdmin.Location = new Point(88, 212);
+            btnAdmin.Location = new Point(90, 244);
             btnAdmin.Margin = new Padding(4);
             btnAdmin.Name = "btnAdmin";
             btnAdmin.Size = new Size(74, 29);
@@ -94,7 +95,7 @@
             // lblRank
             // 
             lblRank.AutoSize = true;
-            lblRank.Location = new Point(124, 135);
+            lblRank.Location = new Point(126, 167);
             lblRank.Margin = new Padding(4, 0, 4, 0);
             lblRank.Name = "lblRank";
             lblRank.Size = new Size(47, 19);
@@ -104,7 +105,7 @@
             // lblLP
             // 
             lblLP.AutoSize = true;
-            lblLP.Location = new Point(69, 135);
+            lblLP.Location = new Point(71, 167);
             lblLP.Margin = new Padding(4, 0, 4, 0);
             lblLP.Name = "lblLP";
             lblLP.Size = new Size(47, 19);
@@ -113,7 +114,7 @@
             // 
             // progressLP
             // 
-            progressLP.Location = new Point(69, 157);
+            progressLP.Location = new Point(71, 189);
             progressLP.Margin = new Padding(4, 3, 4, 3);
             progressLP.Name = "progressLP";
             progressLP.Size = new Size(108, 28);
@@ -122,7 +123,7 @@
             // lblLPProgress
             // 
             lblLPProgress.AutoSize = true;
-            lblLPProgress.Location = new Point(88, 188);
+            lblLPProgress.Location = new Point(90, 220);
             lblLPProgress.Margin = new Padding(4, 0, 4, 0);
             lblLPProgress.Name = "lblLPProgress";
             lblLPProgress.Size = new Size(47, 19);
@@ -174,6 +175,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(btnSpeedQuiz);
             groupBox2.Controls.Add(progressLP);
             groupBox2.Controls.Add(btnLogout);
             groupBox2.Controls.Add(lblLPProgress);
@@ -184,16 +186,27 @@
             groupBox2.Controls.Add(lblRank);
             groupBox2.Location = new Point(24, 169);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(250, 254);
+            groupBox2.Size = new Size(250, 370);
             groupBox2.TabIndex = 13;
             groupBox2.TabStop = false;
+            // 
+            // btnSpeedQuiz
+            // 
+            btnSpeedQuiz.Location = new Point(71, 91);
+            btnSpeedQuiz.Margin = new Padding(4);
+            btnSpeedQuiz.Name = "btnSpeedQuiz";
+            btnSpeedQuiz.Size = new Size(110, 29);
+            btnSpeedQuiz.TabIndex = 9;
+            btnSpeedQuiz.Text = "Speed quiz";
+            btnSpeedQuiz.UseVisualStyleBackColor = true;
+            btnSpeedQuiz.Click += btnSpeedQuiz_Click;
             // 
             // MainMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.images__1_;
-            ClientSize = new Size(303, 435);
+            ClientSize = new Size(303, 541);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -222,5 +235,6 @@
         private Label label;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
+        private Button btnSpeedQuiz;
     }
 }
