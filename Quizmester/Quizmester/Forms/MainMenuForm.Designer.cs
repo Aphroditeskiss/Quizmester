@@ -200,7 +200,6 @@
             Margin = new Padding(4);
             Name = "MainMenuForm";
             Text = "MainMenuForm";
-            Load += MainMenuForm_Load;
             ((System.ComponentModel.ISupportInitialize)picRank).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

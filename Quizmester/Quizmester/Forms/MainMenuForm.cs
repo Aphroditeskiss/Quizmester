@@ -1,16 +1,17 @@
-﻿using Quizmester.Models;
+﻿// ========= IMPORTS =========
+using Quizmester.Models;
 using Quizmester.Services;
 
 namespace Quizmester.Forms
 {
     public partial class MainMenuForm : Form
     {
-        private readonly User? _currentUser;
-        private readonly RankService _rankService =
-    new RankService();
+        // ========= READONLY =========
+        private readonly User? _currentUser; //remember current user
+        private readonly RankService _rankService = new RankService();
+        private readonly RankIconService _rankIconService = new RankIconService();
 
-        private readonly RankIconService _rankIconService =
-    new RankIconService();
+        // ========= MAIN MENU FORM =========
         public MainMenuForm()
         {
             InitializeComponent();
@@ -18,19 +19,20 @@ namespace Quizmester.Forms
 
         public MainMenuForm(User user) : this()
         {
-            _currentUser = user;
-            label.Text = $"{_currentUser.Username}!";
+            _currentUser = user; //store user
+            label.Text = $"{_currentUser.Username}!"; //put username on label
 
             btnAdmin.Visible = user.IsActive && user.IsAdmin;
             LoadPlayerRank();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        // ========= BUTTONS =========
+        private void btnLogout_Click(object sender, EventArgs e) //close main menu
         {
             Close();
         }
 
-        private void btnPlay_Click(object sender, EventArgs e)
+        private void btnPlay_Click(object sender, EventArgs e)  //play quiz
         {
             if (_currentUser == null)
             {
@@ -38,26 +40,20 @@ namespace Quizmester.Forms
                 return;
             }
 
-            using CategorySelectionForm categoryForm =
-                new CategorySelectionForm(_currentUser);
+            using CategorySelectionForm categoryForm = new CategorySelectionForm(_currentUser); //create category selection screen
 
             categoryForm.ShowDialog(this);
         }
 
-        private void btnScoreboard_Click(object sender, EventArgs e)
+        private void btnScoreboard_Click(object sender, EventArgs e) // open scoreboard
         {
             using ScoreboardForm scoreboardForm = new ScoreboardForm();
             scoreboardForm.ShowDialog(this);
         }
 
-        private void MainMenuForm_Load(object sender, EventArgs e)
+        private void btnAdmin_Click(object sender, EventArgs e) //open admin panel
         {
-
-        }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
-        {
-            if (_currentUser == null ||
+            if (_currentUser == null || //just in case a non-admin player tries to open the admin, show warning
                 !_currentUser.IsActive ||
                 !_currentUser.IsAdmin)
             {
@@ -69,7 +65,8 @@ namespace Quizmester.Forms
             adminForm.ShowDialog(this);
         }
 
-        private void LoadPlayerRank()
+        // ========= OTHER =========
+        private void LoadPlayerRank() //load rank of the player
         {
             if (_currentUser == null)
             {
@@ -77,16 +74,13 @@ namespace Quizmester.Forms
                 return;
             }
 
-            Rank rank =
-                _rankService.GetRank(_currentUser.LP);
+            Rank rank = _rankService.GetRank(_currentUser.LP); //figure out what information should be displayed based off lp
 
             lblRank.Text = rank.Name;
 
-            lblLP.Text =
-                $"{rank.LPIntoRank} LP";
+            lblLP.Text = $"{rank.LPIntoRank} LP";
 
-            picRank.Image =
-                _rankIconService.GetRankIcon(rank);
+            picRank.Image = _rankIconService.GetRankIcon(rank); //fetch appropriate image from icon service
 
             UpdateLPProgress(rank);
         }
@@ -95,7 +89,7 @@ namespace Quizmester.Forms
         {
             int lpNeeded;
 
-            if (rank.Name.StartsWith("Iron") ||
+            if (rank.Name.StartsWith("Iron") || //iron through gold need 100 lp to rank up
                 rank.Name.StartsWith("Bronze") ||
                 rank.Name.StartsWith("Silver") ||
                 rank.Name.StartsWith("Gold"))
@@ -112,13 +106,11 @@ namespace Quizmester.Forms
             }
             else
             {
-                // Master is currently the highest rank.
-                progressLP.Minimum = 0;
+                progressLP.Minimum = 0; //highest is master, bar = full
                 progressLP.Maximum = 100;
                 progressLP.Value = 100;
 
-                lblLPProgress.Text =
-                    $"{rank.LPIntoRank} LP";
+                lblLPProgress.Text = $"{rank.LPIntoRank} LP"; //show lp beyond master
 
                 return;
             }
@@ -126,28 +118,17 @@ namespace Quizmester.Forms
             progressLP.Minimum = 0;
             progressLP.Maximum = lpNeeded;
 
-            progressLP.Value =
+            progressLP.Value = //keep number in permitted range
                 Math.Clamp(
                     rank.LPIntoRank,
                     0,
                     lpNeeded
                 );
 
-            lblLPProgress.Text =
-                $"{rank.LPIntoRank} / {lpNeeded} LP";
-        }
+            lblLPProgress.Text = $"{rank.LPIntoRank} / {lpNeeded} LP";
+        }    //show LP and initialize ranks
 
-        private int GetRankProgressMaximum(Rank rank)
-        {
-            return rank.Name switch
-            {
-                "Platinum" => 400,
-                "Diamond" => 400,
-                _ => 100
-            };
-        }
-
-        protected override void OnActivated(EventArgs e)
+        protected override void OnActivated(EventArgs e) //refresh menu
         {
             base.OnActivated(e);
 

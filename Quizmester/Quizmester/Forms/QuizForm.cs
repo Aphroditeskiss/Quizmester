@@ -38,6 +38,7 @@ namespace Quizmester.Forms
 
         private bool _skipUsed;
         private bool _finished;
+        private bool _fiftyFiftyUsed;
 
         private int _answeredQuestions;
         private int _correctAnswers;
@@ -60,6 +61,7 @@ namespace Quizmester.Forms
             }
 
             btnSkip.Click += SkipButton_Click;
+            btnFiftyFifty.Click += FiftyFiftyButton_Click;
 
             _timer.Interval = 100;
             _timer.Tick += Timer_Tick;
@@ -144,6 +146,8 @@ namespace Quizmester.Forms
 
                 _answerButtons[i].Tag =
                     answers[i];
+
+                _answerButtons[i].Enabled = true;
             }
 
             _questionDeadline =
@@ -151,6 +155,60 @@ namespace Quizmester.Forms
                 question.TimeLimitSeconds;
 
             UpdateTimerLabels();
+        }
+
+        private void FiftyFiftyButton_Click(
+    object? sender,
+    EventArgs e)
+        {
+            if (!CheckTimeLimits() || _fiftyFiftyUsed)
+            {
+                return;
+            }
+
+            // Find the button containing the correct answer.
+            Button? correctButton = _answerButtons
+                .FirstOrDefault(button =>
+                    button.Tag is Answer answer &&
+                    answer.IsCorrect);
+
+            if (correctButton == null)
+            {
+                return;
+            }
+
+            // Get all incorrect answer buttons.
+            List<Button> incorrectButtons = _answerButtons
+                .Where(button =>
+                    button.Tag is Answer answer &&
+                    !answer.IsCorrect)
+                .ToList();
+
+            if (incorrectButtons.Count < 3)
+            {
+                return;
+            }
+
+            // Randomly choose one wrong answer that stays enabled.
+            Button wrongButtonToKeep =
+                incorrectButtons[
+                    Random.Shared.Next(incorrectButtons.Count)
+                ];
+
+            // Disable the other two wrong answers.
+            foreach (Button button in incorrectButtons)
+            {
+                if (button != wrongButtonToKeep)
+                {
+                    button.Enabled = false;
+                }
+            }
+
+            // Mark the joker as used.
+            _fiftyFiftyUsed = true;
+
+            btnFiftyFifty.Enabled = false;
+            btnFiftyFifty.Text = "50/50 used";
         }
 
         private void Timer_Tick(
@@ -302,6 +360,7 @@ namespace Quizmester.Forms
             }
 
             btnSkip.Enabled = false;
+            btnFiftyFifty.Enabled = false;
 
             lblScore.Text =
                 $"Score: {_score}";

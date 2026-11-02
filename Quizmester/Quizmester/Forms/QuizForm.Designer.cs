@@ -37,6 +37,7 @@
             lblQuestionTime = new Label();
             btnSkip = new Button();
             lblQuestion = new Label();
+            btnFiftyFifty = new Button();
             SuspendLayout();
             // 
             // lblScore
@@ -108,7 +109,7 @@
             // 
             // btnSkip
             // 
-            btnSkip.Location = new Point(108, 221);
+            btnSkip.Location = new Point(76, 221);
             btnSkip.Margin = new Padding(3, 4, 3, 4);
             btnSkip.Name = "btnSkip";
             btnSkip.Size = new Size(75, 29);
@@ -125,12 +126,22 @@
             lblQuestion.Text = "label2";
             lblQuestion.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // btnFiftyFifty
+            // 
+            btnFiftyFifty.Location = new Point(157, 221);
+            btnFiftyFifty.Name = "btnFiftyFifty";
+            btnFiftyFifty.Size = new Size(75, 29);
+            btnFiftyFifty.TabIndex = 10;
+            btnFiftyFifty.Text = "50/50";
+            btnFiftyFifty.UseVisualStyleBackColor = true;
+            // 
             // QuizForm
             // 
             AutoScaleDimensions = new SizeF(7F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.images__1_;
             ClientSize = new Size(329, 263);
+            Controls.Add(btnFiftyFifty);
             Controls.Add(lblQuestion);
             Controls.Add(btnSkip);
             Controls.Add(lblQuestionTime);
@@ -161,5 +172,6 @@
         private Label lblQuestionTime;
         private Button btnSkip;
         private Label lblQuestion;
+        private Button btnFiftyFifty;
     }
 }
