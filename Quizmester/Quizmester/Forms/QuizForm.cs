@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using Quizmester.Data;
 using Quizmester.Models;
 using Quizmester.Services;
+using System.Media;
 
 namespace Quizmester.Forms
 {
@@ -42,6 +43,8 @@ namespace Quizmester.Forms
 
         private int _answeredQuestions;
         private int _correctAnswers;
+        private int _specialQuestionIndex = -1;
+        private SoundPlayer? _specialQuestionSound;
 
         public QuizForm()
         {
@@ -67,18 +70,21 @@ namespace Quizmester.Forms
             _timer.Tick += Timer_Tick;
         }
 
-        public QuizForm(
-            List<Question> questions,
-            User user) : this()
+        public QuizForm(List<Question> questions,User user) : this()
         {
-            Question[] shuffledQuestions =
-                questions.ToArray();
+            Question[] shuffledQuestions = questions.ToArray();
 
             Random.Shared.Shuffle(shuffledQuestions);
 
             _questions.AddRange(shuffledQuestions);
 
             _currentUser = user;
+
+            int specialQuestionRange = Math.Min(20, _questions.Count);
+            if (specialQuestionRange > 0)
+            {
+                _specialQuestionIndex = Random.Shared.Next(0, specialQuestionRange);
+            }
         }
 
         protected override void OnLoad(EventArgs e)
@@ -128,6 +134,8 @@ namespace Quizmester.Forms
 
             lblQuestion.Text =
                 question.QuestionText;
+
+            UpdateSpecialQuestionDesign();
 
             lblScore.Text =
                 $"Score: {_score}";
@@ -290,9 +298,7 @@ namespace Quizmester.Forms
                     : SystemColors.ControlText;
         }
 
-        private void AnswerButton_Click(
-            object? sender,
-            EventArgs e)
+        private void AnswerButton_Click(object? sender,EventArgs e)
         {
             if (!CheckTimeLimits())
             {
@@ -305,8 +311,7 @@ namespace Quizmester.Forms
                 return;
             }
 
-            Question question =
-                _questions[_questionIndex];
+            Question question = _questions[_questionIndex];
 
             _answeredQuestions++;
 
@@ -314,7 +319,15 @@ namespace Quizmester.Forms
             {
                 _correctAnswers++;
 
-                _score += question.Points;
+                int pointsEarned = question.Points;
+
+                if(_questionIndex == _specialQuestionIndex)
+                {
+                    pointsEarned *= 2;
+                }
+
+                _score += pointsEarned;
+
             }
 
             _questionIndex++;
@@ -525,6 +538,38 @@ namespace Quizmester.Forms
             _clock.Stop();
 
             base.OnFormClosed(e);
+        }
+
+        private void UpdateSpecialQuestionDesign()
+        {
+            bool isSpecial = _questionIndex == _specialQuestionIndex;
+
+            if (isSpecial)
+            {
+                lblSpecialQuestion.Visible = true;
+                lblQuestion.BackColor = Color.Goldenrod;
+                lblQuestion.ForeColor = Color.Black;
+                PlaySpecialQuestionSound();
+            }
+            else
+            {
+                lblSpecialQuestion.Visible = false;
+                lblQuestion.BackColor = SystemColors.Control;
+                lblQuestion.ForeColor = SystemColors.ControlText;
+            }
+        }
+
+        private void PlaySpecialQuestionSound()
+        {
+            string path = Path.Combine(AppContext.BaseDirectory, "Assets", "Sounds", "retreat.wav");
+            if(!File.Exists(path))
+            {
+                return;
+            }
+
+            SoundPlayer player = new SoundPlayer(path);
+
+            player.Play();
         }
     }
 }
