@@ -42,9 +42,9 @@
             // 
             // btnTestDatabase
             // 
-            btnTestDatabase.Location = new Point(79, 23);
+            btnTestDatabase.Location = new Point(61, 23);
             btnTestDatabase.Name = "btnTestDatabase";
-            btnTestDatabase.Size = new Size(88, 30);
+            btnTestDatabase.Size = new Size(121, 30);
             btnTestDatabase.TabIndex = 0;
             btnTestDatabase.Text = "Test Database";
             btnTestDatabase.UseVisualStyleBackColor = true;

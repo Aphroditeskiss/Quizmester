@@ -1,17 +1,14 @@
-﻿// ========= IMPORTS =========
-using Quizmester.Models;
+﻿using Quizmester.Models;
 using Quizmester.Services;
 
 namespace Quizmester.Forms
 {
     public partial class MainMenuForm : Form
     {
-        // ========= READONLY =========
         private readonly User? _currentUser; //remember current user
         private readonly RankService _rankService = new RankService();
         private readonly RankIconService _rankIconService = new RankIconService();
 
-        // ========= MAIN MENU FORM =========
         public MainMenuForm()
         {
             InitializeComponent();
@@ -27,7 +24,6 @@ namespace Quizmester.Forms
             LoadPlayerRank();
         }
 
-        // ========= BUTTONS =========
         private void btnLogout_Click(object sender, EventArgs e) //close main menu
         {
             Close();
@@ -66,7 +62,6 @@ namespace Quizmester.Forms
             adminForm.ShowDialog(this);
         }
 
-        // ========= OTHER =========
         private void LoadPlayerRank() //load rank of the player
         {
             if (_currentUser == null)

@@ -5,9 +5,8 @@ namespace Quizmester.Data
 {
     public class QuestionRepository
     {
-        public List<Question> GetQuestions(List<int>? categoryIds = null)
+        public List<Question> GetQuestions(List<int>? categoryIds = null) //load questions for quiz
         {
-            // null means General; an empty selection means no questions.
             if (categoryIds != null && categoryIds.Count == 0)
             {
                 return new List<Question>();
@@ -151,12 +150,12 @@ namespace Quizmester.Data
             using MySqlTransaction transaction = connection.BeginTransaction();
 
             string permissionSql = """
-        SELECT COUNT(*)
-        FROM users
-        WHERE user_id = @userId
-          AND role = 'Admin'
-          AND is_active = TRUE;
-        """;
+                SELECT COUNT(*)
+                FROM users
+                WHERE user_id = @userId
+                  AND role = 'Admin'
+                  AND is_active = TRUE;
+                """;
 
             using MySqlCommand permissionCommand =
                 new MySqlCommand(permissionSql, connection, transaction);
@@ -170,11 +169,11 @@ namespace Quizmester.Data
             }
 
             string questionSql = """
-        INSERT INTO questions
-            (category_id, question_text, points, time_limit_seconds, is_active)
-        VALUES
-            (@categoryId, @text, @points, @seconds, @active);
-        """;
+                INSERT INTO questions
+                    (category_id, question_text, points, time_limit_seconds, is_active)
+                VALUES
+                    (@categoryId, @text, @points, @seconds, @active);
+                """;
 
             using MySqlCommand questionCommand =
                 new MySqlCommand(questionSql, connection, transaction);
@@ -190,9 +189,9 @@ namespace Quizmester.Data
             int questionId = checked((int)questionCommand.LastInsertedId);
 
             string answerSql = """
-        INSERT INTO answers (question_id, answer_text, is_correct)
-        VALUES (@questionId, @text, @correct);
-        """;
+                INSERT INTO answers (question_id, answer_text, is_correct)
+                VALUES (@questionId, @text, @correct);
+                """;
 
             foreach (Answer answer in question.Answers)
             {

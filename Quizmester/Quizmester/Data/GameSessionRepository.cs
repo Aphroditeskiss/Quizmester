@@ -5,7 +5,7 @@ namespace Quizmester.Data
 {
     public class GameSessionRepository
     {
-        public int Save(GameSession game)
+        public int Save(GameSession game) //save game result
         {
             using MySqlConnection connection = Database.GetConnection();
             connection.Open();
@@ -25,7 +25,7 @@ namespace Quizmester.Data
             return checked((int)command.LastInsertedId);
         }
 
-        public List<ScoreboardEntry> GetTopTen()
+        public List<ScoreboardEntry> GetTopTen() //load scoreboard
         {
             List<ScoreboardEntry> entries = new List<ScoreboardEntry>();
 
@@ -33,15 +33,15 @@ namespace Quizmester.Data
             connection.Open();
 
             string sql = """
-        SELECT
-            g.game_session_id,
-            u.username,
-            g.score
-        FROM game_sessions g
-        JOIN users u ON u.user_id = g.user_id
-        ORDER BY g.score DESC, g.game_session_id ASC
-        LIMIT 10;
-        """;
+                SELECT
+                    g.game_session_id,
+                    u.username,
+                    g.score
+                FROM game_sessions g
+                JOIN users u ON u.user_id = g.user_id
+                ORDER BY g.score DESC, g.game_session_id ASC
+                LIMIT 10;
+            """;
 
             using MySqlCommand command = new MySqlCommand(sql, connection);
             using MySqlDataReader reader = command.ExecuteReader();

@@ -4,7 +4,7 @@ namespace Quizmester.Services
 {
     public class RankService
     {
-        public Rank GetRank(int lp)
+        public Rank GetRank(int lp) //find the rank for LP total
         {
             if (lp < 100)
                 return CreateRank("Iron IV", lp, 0);
@@ -75,7 +75,7 @@ namespace Quizmester.Services
             );
         }
 
-        public int CalculateLPGain(
+        public int CalculateLPGain( //calculate LP reward
             int correctAnswers,
             int totalQuestions)
         {
@@ -84,7 +84,7 @@ namespace Quizmester.Services
                 return 0;
             }
 
-            double percentage =
+            double percentage = //calculate percentage answered correctly
                 (double)correctAnswers /
                 totalQuestions *
                 100;
@@ -107,12 +107,12 @@ namespace Quizmester.Services
             return 5;
         }
 
-        private Rank CreateRank(
+        private Rank CreateRank( //build rank object
             string name,
             int lp,
             int minimumLP)
         {
-            return new Rank
+            return new Rank //fill properties
             {
                 Name = name,
                 CurrentLP = lp,

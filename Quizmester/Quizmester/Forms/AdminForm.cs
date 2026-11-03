@@ -7,16 +7,14 @@ namespace Quizmester.Forms
     public partial class AdminForm : Form
     {
         private readonly User? _currentUser;
+        private readonly QuestionRepository _questionRepository = new QuestionRepository();
+        private readonly UserRepository _userRepository = new UserRepository();
 
-        private readonly QuestionRepository _questionRepository =
-            new QuestionRepository();
-        private readonly UserRepository _userRepository =
-    new UserRepository();
-        public AdminForm()
+        public AdminForm() //set up screen
         {
             InitializeComponent();
 
-            btnClose.Click += btnClose_Click;
+            btnClose.Click += btnClose_Click; //connect buttons to their click handling functions
             btnRefresh.Click += btnRefresh_Click;
             btnRefreshUsers.Click += btnRefreshUsers_Click;
 
@@ -24,12 +22,12 @@ namespace Quizmester.Forms
             ConfigureUserGrid();
         }
 
-        public AdminForm(User user) : this()
+        public AdminForm(User user) : this() //remember who opened screen
         {
             _currentUser = user;
         }
 
-        protected override void OnLoad(EventArgs e)
+        protected override void OnLoad(EventArgs e) //check access
         {
             base.OnLoad(e);
 
@@ -49,14 +47,14 @@ namespace Quizmester.Forms
             LoadUsers();
         }
 
-        private bool HasAdminAccess()
+        private bool HasAdminAccess() //check current user
         {
             return _currentUser != null &&
                    _currentUser.IsActive &&
                    _currentUser.IsAdmin;
         }
 
-        private void ConfigureGrid()
+        private void ConfigureGrid() //setup question table
         {
             dgvQuestions.AutoGenerateColumns = false;
             dgvQuestions.Columns.Clear();
@@ -88,7 +86,7 @@ namespace Quizmester.Forms
             });
         }
 
-        private void AddTextColumn(
+        private void AddTextColumn( //creates question table column
             string heading,
             string propertyName,
             float widthWeight)
@@ -102,7 +100,7 @@ namespace Quizmester.Forms
             });
         }
 
-        private void LoadQuestions()
+        private void LoadQuestions() // fill question table
         {
             if (!HasAdminAccess())
             {
@@ -137,7 +135,7 @@ namespace Quizmester.Forms
             Close();
         }
 
-        private void btnAddQuestion_Click(object sender, EventArgs e)
+        private void btnAddQuestion_Click(object sender, EventArgs e) //add new question
         {
             if (!HasAdminAccess() || _currentUser == null)
             {
@@ -153,7 +151,7 @@ namespace Quizmester.Forms
             }
         }
 
-        private void btnEditQuestion_Click(object sender, EventArgs e)
+        private void btnEditQuestion_Click(object sender, EventArgs e) //edit question
         {
             if (!HasAdminAccess() || _currentUser == null)
             {

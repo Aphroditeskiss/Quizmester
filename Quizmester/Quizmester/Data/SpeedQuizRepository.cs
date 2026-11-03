@@ -1,5 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using Quizmester.Forms;
+using Quizmester.Models;
 
 namespace Quizmester.Data
 {

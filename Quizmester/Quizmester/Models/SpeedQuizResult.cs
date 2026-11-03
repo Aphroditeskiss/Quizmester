@@ -1,4 +1,4 @@
-﻿namespace Quizmester.Forms
+﻿namespace Quizmester.Models
 {
     public class SpeedQuizResult
     {

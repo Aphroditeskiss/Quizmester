@@ -4,7 +4,7 @@ namespace Quizmester.Services
 {
     public class RankIconService
     {
-        public Image? GetRankIcon(Rank rank)
+        public Image? GetRankIcon(Rank rank) //receive rank object and return image
         {
             string fileName;
 
@@ -41,7 +41,7 @@ namespace Quizmester.Services
                 return null;
             }
 
-            string path = Path.Combine(
+            string path = Path.Combine( //build file location
                 AppContext.BaseDirectory,
                 "Assets",
                 "Ranks",

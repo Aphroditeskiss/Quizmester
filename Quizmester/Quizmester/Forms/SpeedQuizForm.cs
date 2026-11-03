@@ -51,7 +51,7 @@ namespace Quizmester.Forms
                 button.Click += AnswerButton_Click;
             }
 
-            // Refresh the displayed stopwatch every 50ms.
+            // refresh the displayed stopwatch every 50ms
             _timer.Interval = 50;
             _timer.Tick += Timer_Tick;
         }
@@ -62,7 +62,7 @@ namespace Quizmester.Forms
 
             try
             {
-                // Load all available quiz questions.
+                // load all available quiz questions
                 List<Question> questions =
                     _questionRepository.GetQuestions();
 
@@ -75,7 +75,7 @@ namespace Quizmester.Forms
                     return;
                 }
 
-                // Randomise question order.
+                // randomise question order
                 Question[] shuffledQuestions =
                     questions.ToArray();
 
@@ -83,7 +83,7 @@ namespace Quizmester.Forms
 
                 _questions.AddRange(shuffledQuestions);
 
-                // Set starting labels.
+                // set starting labels
                 lblCorrect.Text =
                     "Correct: 0 / 10";
 
@@ -93,7 +93,7 @@ namespace Quizmester.Forms
                 lblTimer.Text =
                     "00:00.00";
 
-                // Start the Speed Quiz.
+                // start the Speed Quiz
                 _clock.Start();
                 _timer.Start();
 
@@ -118,8 +118,7 @@ namespace Quizmester.Forms
                 return;
             }
 
-            // If we reach the end of the list,
-            // shuffle all questions again.
+            // if we reach the end of the list, shuffle all questions again
             if (_questionIndex >= _questions.Count)
             {
                 Question[] shuffledQuestions =
@@ -139,7 +138,7 @@ namespace Quizmester.Forms
             lblQuestion.Text =
                 question.QuestionText;
 
-            // Shuffle the four answers.
+            // shuffle the four answers
             Answer[] answers =
                 question.Answers.ToArray();
 
@@ -160,7 +159,7 @@ namespace Quizmester.Forms
             }
         }
 
-        private void AnswerButton_Click(
+        private void AnswerButton_Click( //check if answer is correct or not
             object? sender,
             EventArgs e)
         {
@@ -182,8 +181,7 @@ namespace Quizmester.Forms
                 lblCorrect.Text =
                     $"Correct: {_correctAnswers} / 10";
 
-                // The quiz ends immediately
-                // after 10 correct answers.
+
                 if (_correctAnswers >= 10)
                 {
                     FinishSpeedQuiz();
@@ -192,7 +190,7 @@ namespace Quizmester.Forms
             }
             else
             {
-                // Wrong answer = 5 second penalty.
+                // wrong answer = 5 second penalty
                 _penaltySeconds += 5;
 
                 lblPenalty.Text =
@@ -246,7 +244,7 @@ namespace Quizmester.Forms
                 button.Enabled = false;
             }
 
-            // Actual elapsed time + accumulated penalties.
+            // actual elapsed time + accumulated penalties
             TimeSpan finalTime =
                 _clock.Elapsed +
                 TimeSpan.FromSeconds(_penaltySeconds);
@@ -258,8 +256,7 @@ namespace Quizmester.Forms
 
             try
             {
-                // IMPORTANT:
-                // Get the old record BEFORE saving this result.
+                // get the old record BEFORE saving this result.
                 previousFastestTime =
                     _speedQuizRepository.GetFastestTime();
 

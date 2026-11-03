@@ -1,5 +1,4 @@
-﻿// ========= IMPORTS =========
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using Quizmester.Models;
 
 namespace Quizmester.Data

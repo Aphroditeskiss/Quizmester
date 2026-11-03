@@ -24,14 +24,14 @@ namespace Quizmester.Forms
             _currentUser = user;
         }
 
-        protected override void OnLoad(EventArgs e)
+        protected override void OnLoad(EventArgs e) //prepare screen when it loads
         {
             base.OnLoad(e);
             clbCategories.Enabled = !chkGeneral.Checked;
             LoadCategories();
         }
 
-        private void LoadCategories()
+        private void LoadCategories() //load all the categories
         {
             try
             {
@@ -63,12 +63,12 @@ namespace Quizmester.Forms
             }
         }
 
-        private void chkGeneral_CheckedChanged(object sender, EventArgs e)
+        private void chkGeneral_CheckedChanged(object sender, EventArgs e) 
         {
             clbCategories.Enabled = !chkGeneral.Checked;
         }
 
-        private void btnContinue_Click(object sender, EventArgs e)
+        private void btnContinue_Click(object sender, EventArgs e) //starts quiz
         {
             if (_currentUser == null)
             {

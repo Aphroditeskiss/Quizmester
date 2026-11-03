@@ -8,7 +8,7 @@ namespace Quizmester.Services
     {
         private readonly UserRepository _userRepository = new UserRepository();
 
-        public (bool Success, string Message) Register(
+        public (bool Success, string Message) Register( //create user account
             string username, string password, string confirmPassword)
         {
             username = (username ?? string.Empty).Trim();
@@ -22,7 +22,6 @@ namespace Quizmester.Services
             if (password.Length < 8)
                 return (false, "Use a password with at least 8 characters.");
 
-            // Password spaces are intentional, so only trim the username.
             if (password != confirmPassword)
                 return (false, "The passwords do not match.");
 
@@ -31,7 +30,7 @@ namespace Quizmester.Services
 
             var passwordData = PasswordHasher.HashPassword(password);
 
-            try
+            try //save username hash and salt
             {
                 _userRepository.CreateUser(
                     username, passwordData.Hash, passwordData.Salt);
@@ -45,7 +44,7 @@ namespace Quizmester.Services
             return (true, "Account created. You can now log in.");
         }
 
-        public (User? User, string Message) Login(string username, string password)
+        public (User? User, string Message) Login(string username, string password) //check existing acc
         {
             username = (username ?? string.Empty).Trim();
 

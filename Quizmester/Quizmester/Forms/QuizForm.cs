@@ -50,7 +50,7 @@ namespace Quizmester.Forms
         {
             InitializeComponent();
 
-            _answerButtons = new[]
+            _answerButtons = new[] //group all buttons together
             {
                 btnAnswer1,
                 btnAnswer2,
@@ -66,21 +66,19 @@ namespace Quizmester.Forms
             btnSkip.Click += SkipButton_Click;
             btnFiftyFifty.Click += FiftyFiftyButton_Click;
 
-            _timer.Interval = 100;
+            _timer.Interval = 100; //run timer_tick every 100ms
             _timer.Tick += Timer_Tick;
         }
 
         public QuizForm(List<Question> questions,User user) : this()
         {
-            Question[] shuffledQuestions = questions.ToArray();
-
+            Question[] shuffledQuestions = questions.ToArray(); //shuffle questions
             Random.Shared.Shuffle(shuffledQuestions);
-
             _questions.AddRange(shuffledQuestions);
 
-            _currentUser = user;
+            _currentUser = user; //store player
 
-            int specialQuestionRange = Math.Min(20, _questions.Count);
+            int specialQuestionRange = Math.Min(20, _questions.Count); //special question range
             if (specialQuestionRange > 0)
             {
                 _specialQuestionIndex = Random.Shared.Next(0, specialQuestionRange);
@@ -174,7 +172,7 @@ namespace Quizmester.Forms
                 return;
             }
 
-            // Find the button containing the correct answer.
+            // find the button containing the correct answer
             Button? correctButton = _answerButtons
                 .FirstOrDefault(button =>
                     button.Tag is Answer answer &&
@@ -185,7 +183,7 @@ namespace Quizmester.Forms
                 return;
             }
 
-            // Get all incorrect answer buttons.
+            // get all incorrect answer buttons
             List<Button> incorrectButtons = _answerButtons
                 .Where(button =>
                     button.Tag is Answer answer &&
@@ -197,13 +195,13 @@ namespace Quizmester.Forms
                 return;
             }
 
-            // Randomly choose one wrong answer that stays enabled.
+            // randomly choose one wrong answer that stays enabled
             Button wrongButtonToKeep =
                 incorrectButtons[
                     Random.Shared.Next(incorrectButtons.Count)
                 ];
 
-            // Disable the other two wrong answers.
+            // disable the other two wrong answers
             foreach (Button button in incorrectButtons)
             {
                 if (button != wrongButtonToKeep)
@@ -212,7 +210,7 @@ namespace Quizmester.Forms
                 }
             }
 
-            // Mark the joker as used.
+            // mark the joker as used
             _fiftyFiftyUsed = true;
 
             btnFiftyFifty.Enabled = false;
@@ -229,7 +227,7 @@ namespace Quizmester.Forms
             }
         }
 
-        private bool CheckTimeLimits()
+        private bool CheckTimeLimits() //check if time has expired 
         {
             if (_finished)
             {
@@ -258,7 +256,7 @@ namespace Quizmester.Forms
             return true;
         }
 
-        private void UpdateTimerLabels()
+        private void UpdateTimerLabels() //show remaining seconds
         {
             double elapsed =
                 _clock.Elapsed.TotalSeconds;
@@ -335,11 +333,11 @@ namespace Quizmester.Forms
             ShowQuestion();
         }
 
-        private void SkipButton_Click(
+        private void SkipButton_Click( //skip a question
             object? sender,
             EventArgs e)
         {
-            if (!CheckTimeLimits() ||
+            if (!CheckTimeLimits() || //check if time limit is up or if button has already been used
                 _skipUsed)
             {
                 return;
@@ -355,7 +353,7 @@ namespace Quizmester.Forms
             ShowQuestion();
         }
 
-        private void FinishQuiz(string reason)
+        private void FinishQuiz(string reason) //stop and save+show quiz results
         {
             if (_finished)
             {
@@ -396,13 +394,13 @@ namespace Quizmester.Forms
             }
             else
             {
-                // Get the player's rank before this game.
+                // get the player's rank before this game.
                 oldRank =
                     _rankService.GetRank(
                         _currentUser.LP
                     );
 
-                // Calculate LP based on the full quiz.
+                // calculate LP based on the full quiz.
                 lpGained =
                     _rankService.CalculateLPGain(
                         _correctAnswers,
@@ -432,7 +430,7 @@ namespace Quizmester.Forms
                             _score
                     };
 
-                // Save the individual quiz/game.
+                // save the individual quiz/game
                 try
                 {
                     game.GameSessionId =
@@ -454,7 +452,7 @@ namespace Quizmester.Forms
 #endif
                 }
 
-                // Save the player's new LP.
+                // save the player's new Lp
                 try
                 {
                     _userRepository.UpdateLP(
@@ -462,8 +460,8 @@ namespace Quizmester.Forms
                         newLP
                     );
 
-                    // Only update the User object
-                    // after MySQL successfully saves it.
+                    // only update the user object
+                    // after MySQL successfully saves it
                     _currentUser.LP =
                         newLP;
 
